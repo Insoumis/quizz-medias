@@ -91,72 +91,70 @@ label {
     </nav>
 
     <div class="container">
-
       <!--<div>
         <h1>Quizz Médias</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br /> All you get is this text and a mostly barebones HTML document.</p>
       </div>-->
 
-      <xsl:for-each select="/sections/section">
-        <xsl:variable name="titre_section" select="./titre" />
-        <xsl:variable name="nombre_questions" select="count(questions/question)" />
-        <div id="sections">
-        <section class="section" id="{generate-id(.)}">
-            <h1><xsl:value-of select="$titre_section" /></h1>
+      <div id="sections">
+          <xsl:for-each select="/sections/section">
+            <xsl:variable name="titre_section" select="./titre" />
+            <xsl:variable name="nombre_questions" select="count(questions/question)" />
+            <section class="section" id="{generate-id(.)}">
+                <h1><xsl:value-of select="$titre_section" /></h1>
 
-            <p><em><xsl:value-of select="./desc" /></em></p>
+                <p><em><xsl:value-of select="./desc" /></em></p>
 
-            <div class="progress">
-              <xsl:variable name="pourcentage" select="100 * position() div $nombre_questions" />
-              <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
-                <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
-              </div>
-            </div>
+                <div class="progress">
+                  <xsl:variable name="pourcentage" select="100 * position() div $nombre_questions" />
+                  <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
+                    <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
+                  </div>
+                </div>
     
-            <xsl:for-each select="./questions/question">
-                <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
+                <xsl:for-each select="./questions/question">
+                    <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
+                        <h2><xsl:value-of select="./titre" /></h2>
+                        
+                        <form>
+                            <xsl:for-each select="./reponses/reponse">
+                                <div><input type="radio" autocomplete="off" data-correct="{./@correct}" name="{generate-id(../..)}" id="{generate-id(.)}" /> <label for="{generate-id(.)}"><xsl:copy-of select="node()" /></label></div>
+                            </xsl:for-each>
 
-                    <h2><xsl:value-of select="./titre" /></h2>
-                    
-                    <form>
-                        <xsl:for-each select="./reponses/reponse">
-                            <div><input type="radio" autocomplete="off" data-correct="{./@correct}" name="{generate-id(../..)}" id="{generate-id(.)}" /> <label for="{generate-id(.)}"><xsl:copy-of select="node()" /></label></div>
-                        </xsl:for-each>
+                            <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+                        </form>
 
-                        <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
-                    </form>
-
-                    <div class="answer">
-                        <div class="row">
-                            <div class="col-sm-6 correct">
-                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                            </div>
-                            <div class="col-sm-6 incorrect">
-                                <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
-                                <div>
-                                    <xsl:for-each select="./reponses/reponse">
-                                    <xsl:if test="./@correct = 1">
-                                        <strong><xsl:copy-of select="node()" /></strong>
-                                    </xsl:if>
-                                    </xsl:for-each>
+                        <div class="answer">
+                            <div class="row">
+                                <div class="col-sm-6 correct">
+                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
+                                </div>
+                                <div class="col-sm-6 incorrect">
+                                    <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
+                                    <div>
+                                        <xsl:for-each select="./reponses/reponse">
+                                        <xsl:if test="./@correct = 1">
+                                            <strong><xsl:copy-of select="node()" /></strong>
+                                        </xsl:if>
+                                        </xsl:for-each>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 infos">
+                                    <xsl:copy-of select="./infos" />
                                 </div>
                             </div>
-                            <div class="col-sm-6 infos">
-                                <xsl:copy-of select="./infos" />
-                            </div>
+                            <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                         </div>
-                        <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                     </div>
-                    
-                </div>
-            </xsl:for-each>
-        </section>
-        </div>
+                </xsl:for-each>
+            </section>
+        </xsl:for-each>
+    </div>
 
-        <div id="score">
+    <div id="score">
             
-        </div>
-      </xsl:for-each>
+    </div>
+      
 
     </div><!-- /.container -->
 
