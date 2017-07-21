@@ -23,6 +23,17 @@
 
     <style type="text/css">
         body { padding-top: 70px; }
+
+.progress {
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+ }
     </style>
   </head>
 
@@ -61,12 +72,18 @@
         <section class="section" id="generate-id(.)">
             <h1><xsl:value-of select="$titre_section" /></h1>
 
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{count(questions/question)}">
+                <span><strong>0 / <xsl:value-of select="count(questions/question)" /></strong></span>
+              </div>
+            </div>
+    
             <xsl:for-each select="./questions/question">
                 <div class="question" id="generate-id(.)">
                     <h2><xsl:value-of select="./titre" /></h2>
                     
                     <xsl:for-each select="./reponses/reponse">
-                        <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="." /></span></p>
+                        <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="node()" /></span></p>
                     </xsl:for-each>
                 </div>
             </xsl:for-each>
