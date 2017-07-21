@@ -24,7 +24,7 @@
     <style type="text/css">
         body { padding-top: 70px; }
 
-.question { display: none; }
+.question, .answer, .section { display: none; }
 
 .progress {
     position: relative;
@@ -71,19 +71,23 @@
 
       <xsl:for-each select="/sections/section">
         <xsl:variable name="titre_section" select="./titre" />
-        <section class="section" id="generate-id(.)">
+        <xsl:variable name="nombre_questions" select="count(questions/question)" />
+
+        <section class="section" id="{generate-id(.)}">
             <h1><xsl:value-of select="$titre_section" /></h1>
 
             <p><em><xsl:value-of select="./desc" /></em></p>
 
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{count(questions/question)}">
-                <span><strong>0 / <xsl:value-of select="count(questions/question)" /></strong></span>
+              <xsl:variable name="pourcentage" select="100 * position() div $nombre_questions" />
+              <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
+                <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
               </div>
             </div>
     
             <xsl:for-each select="./questions/question">
-                <div class="question" id="{generate-id(.)}">
+                <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
+
                     <h2><xsl:value-of select="./titre" /></h2>
                     
                     <xsl:for-each select="./reponses/reponse">
@@ -91,6 +95,11 @@
                     </xsl:for-each>
 
                     <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+
+                    <div class="answer">
+                        <xsl:copy-of select="./answer" />
+                    </div>
+                    
                 </div>
             </xsl:for-each>
         </section>
@@ -109,11 +118,50 @@
 
     <script type="text/javascript">
         current_question = '<xsl:value-of select="generate-id((//questions/question)[1])" />';
-
+        current_section = '';
 
         function displayAnswer(correct)
         {
             
+        }
+
+        function displayNextSection()
+        {
+            prev_section = current_section;
+            current_section = $('#' + current_question).closest('section').attr('id');
+            if(prev_section != current_section)
+            {
+                $('#' + prev_section).hide();
+                $('#' + current_section).show();
+            }
+        }
+
+
+        function displayNextQuestion()
+        {
+            next_question = $('#' + current_question).next().attr('id');
+            $('#' + current_question).hide();
+
+            if (!next_question)
+            {
+                next_section = $('#' + current_section).next().attr('id');
+
+                $('#' + current_section).hide();
+                current_section = next_section;
+                $('#' + current_section).show();
+                current_question = $('#' + current_section + ' .question').first().attr('id');
+                $('#' + current_question).show();
+            }
+            else
+            {
+                
+                current_question = next_question;
+                $('#' + current_question).show();
+            }
+
+            var cq = $('#' + current_question);
+            $('#' + current_section + ' .progress-bar span strong').text(cq.data('pos') + ' / ' + cq.data('count'));
+            $('#' + current_section + ' .progress-bar').css('width', 100*cq.data('pos')/cq.data('count') + '%');
         }
 
         function answerCurrentQuestion()
@@ -121,19 +169,17 @@
             var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
             
             alert(correct ? "correct" : "incorrect");
-        }
 
-        function displayNextQuestion()
-        {
-            next_question = $('#' + current_question).attr('id');
-            current_question = next_question;
-            $('#' + current_question).show();
+            displayNextQuestion();
         }
 
         $( document ).ready(function() {
             $('.btn-answer').click(answerCurrentQuestion);
+            current_section = $('#' + current_question).closest('section').attr('id');
+            $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
             $('#' + current_question).show();
+            
         });
     </script>
   </body>
