@@ -26,6 +26,8 @@
 
 .question, .answer, .section, .incorrect, .correct { display: none; }
 
+.correct, .incorrect { font-size: 3em; }
+
 .progress {
     position: relative;
 }
@@ -36,6 +38,10 @@
     width: 100%;
     color: black;
  }
+
+.btn-next-container {
+    margin-top: 2em;
+}
     </style>
   </head>
 
@@ -99,24 +105,25 @@
                     </form>
 
                     <div class="answer">
-                        <div class="correct">
-                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                        </div>
-                        <div class="incorrect">
-                            <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
-                            <div>
-                                <xsl:for-each select="./reponses/reponse">
-                                <xsl:if test="./@correct = 1">
-                                    <strong><xsl:copy-of select="node()" /></strong>
-                                </xsl:if>
-                                </xsl:for-each>
+                        <div class="row">
+                            <div class="col-sm-6 correct">
+                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
+                            </div>
+                            <div class="col-sm-6 incorrect">
+                                <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
+                                <div>
+                                    <xsl:for-each select="./reponses/reponse">
+                                    <xsl:if test="./@correct = 1">
+                                        <strong><xsl:copy-of select="node()" /></strong>
+                                    </xsl:if>
+                                    </xsl:for-each>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 infos">
+                                <xsl:copy-of select="./infos" />
                             </div>
                         </div>
-                        <div class="infos">
-                            <xsl:copy-of select="./infos" />
-                        </div>
-
-                        <div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                     </div>
                     
                 </div>
