@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><style type="text/css">
         body { padding-top: 70px; }
 
+.question { display: none; }
+
 .progress {
     position: relative;
 }
@@ -104,13 +106,19 @@
                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="1"><span><strong>0 / 1</strong></span></div>
             </div>
             <div class="question" id="d1e176">
-               <h2></h2>
-               <p><input type="radio" data-correct="" name="d1e176"><span></span></p>
+               <h2>aaa</h2>
+               <p><input type="radio" data-correct="" name="d1e176"><span>aa</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
             </div>
          </section>
       </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script><script type="text/javascript">
         current_question = 'd1e13';
+
+
+        function displayAnswer(correct)
+        {
+            
+        }
 
         function answerCurrentQuestion()
         {
@@ -121,12 +129,14 @@
 
         function displayNextQuestion()
         {
-            next_question = '';
+            next_question = $('#' + current_question).attr('id');
+            current_question = next_question;
+            $('#' + current_question).show();
         }
 
         $( document ).ready(function() {
             $('.btn-answer').click(answerCurrentQuestion);
-            $('.question').hide();
+            /* $('.question').hide(); */
             $('#' + current_question).show();
         });
     </script></body>
