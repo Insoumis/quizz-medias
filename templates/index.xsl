@@ -58,15 +58,17 @@
 
       <xsl:for-each select="/sections/section">
         <xsl:variable name="titre_section" select="./titre" />
-        <section>
+        <section class="section" id="generate-id(.)">
             <h1><xsl:value-of select="$titre_section" /></h1>
 
             <xsl:for-each select="./questions/question">
-                <h2><xsl:value-of select="./titre" /></h2>
-                
-                <xsl:for-each select="./reponses/reponse">
-                    <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <xsl:copy-of select="." /></p>
-                </xsl:for-each>
+                <div class="question" id="generate-id(.)">
+                    <h2><xsl:value-of select="./titre" /></h2>
+                    
+                    <xsl:for-each select="./reponses/reponse">
+                        <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="." /></span></p>
+                    </xsl:for-each>
+                </div>
             </xsl:for-each>
         </section>
       </xsl:for-each>

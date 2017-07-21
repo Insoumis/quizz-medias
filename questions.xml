@@ -93,4 +93,16 @@
         </question>
     </questions>
 </section>
+<section>
+    <titre>Qui a dit...</titre>
+    <desc>Pour chacune des phrases suivantes, devinez qui l'a prononcée ou écrite !</desc>
+    <questions>
+        <question>
+            <titre></titre>
+            <reponses>
+                <reponse></reponse>
+            </reponses>
+        </question>
+    </questions>
+</section>
 </sections>
