@@ -24,7 +24,7 @@
     <style type="text/css">
         body { padding-top: 70px; }
 
-.question, .answer, .section { display: none; }
+.question, .answer, .section, .incorrect, .correct { display: none; }
 
 .progress {
     position: relative;
@@ -90,11 +90,13 @@
 
                     <h2><xsl:value-of select="./titre" /></h2>
                     
-                    <xsl:for-each select="./reponses/reponse">
-                        <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="node()" /></span></p>
-                    </xsl:for-each>
+                    <form>
+                        <xsl:for-each select="./reponses/reponse">
+                            <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="node()" /></span></p>
+                        </xsl:for-each>
 
-                    <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+                        <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+                    </form>
 
                     <div class="answer">
                         <div class="correct">
@@ -113,6 +115,8 @@
                         <div class="infos">
                             <xsl:copy-of select="./infos" />
                         </div>
+
+                        <div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                     </div>
                     
                 </div>
@@ -137,7 +141,9 @@
 
         function displayAnswer(correct)
         {
-            
+            $('#' + current_question + ' form').hide();
+            $('#' + current_question + ' .answer').show();
+            $('#' + current_question + ' .answer .' + (correct ? 'correct' : 'incorrect')).show();
         }
 
         function displayNextSection()
@@ -182,14 +188,12 @@
         function answerCurrentQuestion()
         {
             var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
-            
-            alert(correct ? "correct" : "incorrect");
-
-            displayNextQuestion();
+            displayAnswer(correct);
         }
 
         $( document ).ready(function() {
             $('.btn-answer').click(answerCurrentQuestion);
+            $('.btn-next').click(displayNextQuestion);
             current_section = $('#' + current_question).closest('section').attr('id');
             $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
