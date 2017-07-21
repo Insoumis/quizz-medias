@@ -81,7 +81,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-
+                C'est le titre d'une <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170421.OBS8314/jean-luc-melenchon-un-mirage-dangereux.html">tribune d'Henri Weber</a> parue dans l'Obs à deux jours du premier tour de la Présidentielle.
             </infos>
         </question>
 
@@ -92,7 +92,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                http://www.europe1.fr/politique/melenchon-vous-manipule-945013
+                C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a>.
             </infos>
         </question>
 
@@ -103,7 +103,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                https://twitter.com/20HPolitique/status/867384832736862208
+                C'était le titre d'un article de BFM TV. En effet, Mélenchon est convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Il avait en effet affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire.
             </infos>
         </question>
     </questions>
@@ -113,9 +113,22 @@
     <desc>Pour chacune des phrases suivantes, devinez qui l'a prononcée ou écrite !</desc>
     <questions>
         <question>
-            <titre>aaa</titre>
+            <titre>« Mélenchon, le rouge qui clashe »</titre>
             <reponses>
-                <reponse>aa</reponse>
+                <reponse>Le Figaro</reponse>
+                <reponse>Minute</reponse>
+                <reponse>Libération</reponse>
+                <reponse>Valeurs Actuelles</reponse>
+            </reponses>
+            <infos>
+                <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png" /></a>
+            </infos>
+        </question>
+        <question>
+            <titre>« Jean-Luc Mélenchon joue à saute-cadavre »</titre>
+            <reponses>
+                <reponse>Le Monde</reponse>
+                <reponse>Mediapart</reponse>
             </reponses>
         </question>
     </questions>
