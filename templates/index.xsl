@@ -24,12 +24,34 @@
     <style type="text/css">
         body { padding-top: 70px; }
 
-.question, .answer, .section, .incorrect, .correct { display: none; }
+.question, .answer, .section, .incorrect, .correct, #score { display: none; }
 
 .correct, .incorrect { font-size: 3em; }
 
 .progress {
     position: relative;
+}
+
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+form, input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+label {
+    padding-left: 0.5em;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.btn-next, .btn-answer {
+    font-size: 2em;
 }
 
 .progress span {
@@ -78,7 +100,7 @@
       <xsl:for-each select="/sections/section">
         <xsl:variable name="titre_section" select="./titre" />
         <xsl:variable name="nombre_questions" select="count(questions/question)" />
-
+        <div id="sections">
         <section class="section" id="{generate-id(.)}">
             <h1><xsl:value-of select="$titre_section" /></h1>
 
@@ -98,7 +120,7 @@
                     
                     <form>
                         <xsl:for-each select="./reponses/reponse">
-                            <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="node()" /></span></p>
+                            <div><input type="radio" autocomplete="off" data-correct="{./@correct}" name="{generate-id(../..)}" id="{generate-id(.)}" /> <label for="{generate-id(.)}"><xsl:copy-of select="node()" /></label></div>
                         </xsl:for-each>
 
                         <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
@@ -129,6 +151,11 @@
                 </div>
             </xsl:for-each>
         </section>
+        </div>
+
+        <div id="score">
+            
+        </div>
       </xsl:for-each>
 
     </div><!-- /.container -->
@@ -145,6 +172,15 @@
     <script type="text/javascript">
         current_question = '<xsl:value-of select="generate-id((//questions/question)[1])" />';
         current_section = '';
+
+        completed = 0;
+        points = 0;
+
+        function displayScore()
+        {
+            $("#score").text(points + " / " + completed);
+            $("#score").show();
+        }
 
         function displayAnswer(correct)
         {
@@ -164,7 +200,6 @@
             }
         }
 
-
         function displayNextQuestion()
         {
             next_question = $('#' + current_question).next().attr('id');
@@ -173,12 +208,21 @@
             if (!next_question)
             {
                 next_section = $('#' + current_section).next().attr('id');
+                alert(next_section);
 
                 $('#' + current_section).hide();
-                current_section = next_section;
-                $('#' + current_section).show();
-                current_question = $('#' + current_section + ' .question').first().attr('id');
-                $('#' + current_question).show();
+
+                if (!next_section)
+                {
+                    displayScore();
+                }
+                else
+                {
+                    current_section = next_section;
+                    $('#' + current_section).show();
+                    current_question = $('#' + current_section + ' .question').first().attr('id');
+                    $('#' + current_question).show();
+                }
             }
             else
             {
@@ -195,6 +239,10 @@
         function answerCurrentQuestion()
         {
             var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
+            completed++;
+            if (correct)
+                points++;
+
             displayAnswer(correct);
         }
 

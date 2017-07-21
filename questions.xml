@@ -5,7 +5,7 @@
 
     <questions>
         <question>
-            <titre>Maximilien Ilitch Mélenchon</titre>
+            <titre>« Maximilien Ilitch Mélenchon »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -16,7 +16,7 @@
         </question>
 
         <question>
-            <titre>Mélenchon, sans-culotte ou sans c...</titre>
+            <titre>« Mélenchon, sans-culotte ou sans c... »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -27,7 +27,7 @@
         </question>
 
         <question>
-            <titre>Comment Emmanuel Macron est devenu "leader du monde libre"</titre>
+            <titre>« Comment Emmanuel Macron est devenu "leader du monde libre" »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -38,7 +38,7 @@
         </question>
 
         <question>
-            <titre>Faites ce que vous voulez, mais votez Macron</titre>
+            <titre>« Faites ce que vous voulez, mais votez Macron »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -49,7 +49,7 @@
         </question>
 
         <question>
-            <titre>Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux</titre>
+            <titre>« Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -60,7 +60,7 @@
         </question>
 
         <question>
-            <titre>Jean-Luc Mélenchon, un mirage dangereux</titre>
+            <titre>« Jean-Luc Mélenchon, un mirage dangereux »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -71,7 +71,7 @@
         </question>
 
         <question>
-            <titre>Mélenchon vous "manipule"</titre>
+            <titre>« Mélenchon vous "manipule" »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
@@ -82,7 +82,7 @@
         </question>
 
         <question>
-            <titre>Mélenchon convoqué par la justice dans l'affaire des Panama Papers</titre>
+            <titre>« Mélenchon convoqué par la justice dans l'affaire des Panama Papers »</titre>
             <reponses>
                 <reponse correct="1">Vrai</reponse>
                 <reponse>Faux</reponse>
