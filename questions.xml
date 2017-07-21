@@ -11,7 +11,22 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php">figaro</a>
+                Il s'agit d'un éditorial à la une du Figaro, publié le 12 avril 2017 (premier tour de la Présidentielle : 23 avril). <br />
+
+                <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg" /></a>
+            </infos>
+        </question>
+
+        <question>
+            <titre>« Mélenchon : le délirant projet du Chavez Français »</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 (premier tour de la Présidentielle : 23 avril). <br />
+
+                <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
             </infos>
         </question>
 
@@ -22,7 +37,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">l'obs</a>
+                Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
             </infos>
         </question>
 
@@ -33,7 +48,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                http://www.lepoint.fr/politique/comment-emmanuel-macron-est-devenu-leader-du-monde-libre-02-06-2017-2132311_20.php
+                Il s'agit du titre d'un article du Point <br /><a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png" /></a>
             </infos>
         </question>
 
@@ -55,7 +70,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-
+                Il s'agit du titre d'un <a href="https://www.challenges.fr/politique/melenchon-ruffin-et-les-sans-cravates-une-menace-a-prendre-au-serieux_483514">éditorial de Bruno Roger-Petit pour Challenges</a>.
             </infos>
         </question>
 
