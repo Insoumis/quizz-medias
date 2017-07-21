@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><style type="text/css">
         body { padding-top: 70px; }
 
-.question { display: none; }
+.question, .answer, .section { display: none; }
 
 .progress {
     position: relative;
@@ -44,80 +44,128 @@
             <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.
             </p>
          </div>
-         <section class="section" id="generate-id(.)">
+         <section class="section" id="d1e3">
             <h1>Vrai titre ou faux titre ?</h1>
             <p><em>Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux titre de presse.</em></p>
             <div class="progress">
-               <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="8"><span><strong>0 / 8</strong></span></div>
+               <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="8" style="width: 12.5%;"><span><strong>1 / 8</strong></span></div>
             </div>
-            <div class="question" id="d1e13">
+            <div class="question" id="d1e13" data-pos="1" data-count="8">
                <h2>Maximilien Ilitch Mélenchon</h2>
                <p><input type="radio" data-correct="1" name="d1e13"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e13"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e34">
+            <div class="question" id="d1e34" data-pos="2" data-count="8">
                <h2>Mélenchon, sans-culotte ou sans c...</h2>
                <p><input type="radio" data-correct="1" name="d1e34"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e34"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e55">
+            <div class="question" id="d1e55" data-pos="3" data-count="8">
                <h2>Comment Emmanuel Macron est devenu "leader du monde libre"</h2>
                <p><input type="radio" data-correct="1" name="d1e55"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e55"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e73">
+            <div class="question" id="d1e73" data-pos="4" data-count="8">
                <h2>Faites ce que vous voulez, mais votez Macron</h2>
                <p><input type="radio" data-correct="1" name="d1e73"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e73"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e91">
+            <div class="question" id="d1e91" data-pos="5" data-count="8">
                <h2>Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux</h2>
                <p><input type="radio" data-correct="1" name="d1e91"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e91"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e110">
+            <div class="question" id="d1e110" data-pos="6" data-count="8">
                <h2>Jean-Luc Mélenchon, un mirage dangereux</h2>
                <p><input type="radio" data-correct="1" name="d1e110"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e110"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e128">
+            <div class="question" id="d1e128" data-pos="7" data-count="8">
                <h2>Mélenchon vous "manipule"</h2>
                <p><input type="radio" data-correct="1" name="d1e128"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e128"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
-            <div class="question" id="d1e146">
+            <div class="question" id="d1e146" data-pos="8" data-count="8">
                <h2>Mélenchon convoqué par la justice dans l'affaire des Panama Papers</h2>
                <p><input type="radio" data-correct="1" name="d1e146"><span>Vrai</span></p>
                <p><input type="radio" data-correct="" name="d1e146"><span>Faux</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
          </section>
-         <section class="section" id="generate-id(.)">
+         <section class="section" id="d1e166">
             <h1>Qui a dit...</h1>
             <p><em>Pour chacune des phrases suivantes, devinez qui l'a prononcée ou écrite !</em></p>
             <div class="progress">
-               <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="1"><span><strong>0 / 1</strong></span></div>
+               <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="1" style="width: 200%;"><span><strong>1 / 1</strong></span></div>
             </div>
-            <div class="question" id="d1e176">
+            <div class="question" id="d1e176" data-pos="1" data-count="1">
                <h2>aaa</h2>
                <p><input type="radio" data-correct="" name="d1e176"><span>aa</span></p>
                <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
+               <div class="answer"></div>
             </div>
          </section>
       </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script><script type="text/javascript">
         current_question = 'd1e13';
-
+        current_section = '';
 
         function displayAnswer(correct)
         {
             
+        }
+
+        function displayNextSection()
+        {
+            prev_section = current_section;
+            current_section = $('#' + current_question).closest('section').attr('id');
+            if(prev_section != current_section)
+            {
+                $('#' + prev_section).hide();
+                $('#' + current_section).show();
+            }
+        }
+
+
+        function displayNextQuestion()
+        {
+            next_question = $('#' + current_question).next().attr('id');
+            $('#' + current_question).hide();
+
+            if (!next_question)
+            {
+                next_section = $('#' + current_section).next().attr('id');
+
+                $('#' + current_section).hide();
+                current_section = next_section;
+                $('#' + current_section).show();
+                current_question = $('#' + current_section + ' .question').first().attr('id');
+                $('#' + current_question).show();
+            }
+            else
+            {
+                
+                current_question = next_question;
+                $('#' + current_question).show();
+            }
+
+            var cq = $('#' + current_question);
+            $('#' + current_section + ' .progress-bar span strong').text(cq.data('pos') + ' / ' + cq.data('count'));
+            $('#' + current_section + ' .progress-bar').css('width', 100*cq.data('pos')/cq.data('count') + '%');
         }
 
         function answerCurrentQuestion()
@@ -125,19 +173,17 @@
             var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
             
             alert(correct ? "correct" : "incorrect");
-        }
 
-        function displayNextQuestion()
-        {
-            next_question = $('#' + current_question).attr('id');
-            current_question = next_question;
-            $('#' + current_question).show();
+            displayNextQuestion();
         }
 
         $( document ).ready(function() {
             $('.btn-answer').click(answerCurrentQuestion);
+            current_section = $('#' + current_question).closest('section').attr('id');
+            $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
             $('#' + current_question).show();
+            
         });
     </script></body>
 </html>
