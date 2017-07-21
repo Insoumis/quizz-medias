@@ -1,0 +1,16 @@
+sudo: false
+dist: trusty
+
+cache:
+  apt: true
+
+addons:
+  apt:
+    packages:
+    - libsaxonb-java
+    - default-jre
+
+script: ./build.sh
+
+after_success:
+    - ./deploy.sh

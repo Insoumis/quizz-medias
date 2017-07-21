@@ -1,0 +1,96 @@
+<sections>
+<section>
+    <titre>Vrai titre ou faux titre ?</titre>
+    <desc>Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux titre de presse.</desc>
+
+    <questions>
+        <question>
+            <titre>Maximilien Ilitch Mélenchon</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php">figaro</a>
+            </infos>
+        </question>
+
+        <question>
+            <titre>Mélenchon, sans-culotte ou sans c...</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">l'obs</a>
+            </infos>
+        </question>
+
+        <question>
+            <titre>Comment Emmanuel Macron est devenu "leader du monde libre"</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                http://www.lepoint.fr/politique/comment-emmanuel-macron-est-devenu-leader-du-monde-libre-02-06-2017-2132311_20.php
+            </infos>
+        </question>
+
+        <question>
+            <titre>Faites ce que vous voulez, mais votez Macron</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                https://opiam.fr/2017/05/06/libetorchon0505/
+            </infos>
+        </question>
+
+        <question>
+            <titre>Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+
+            </infos>
+        </question>
+
+        <question>
+            <titre>Jean-Luc Mélenchon, un mirage dangereux</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+
+            </infos>
+        </question>
+
+        <question>
+            <titre>Mélenchon vous "manipule"</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                http://www.europe1.fr/politique/melenchon-vous-manipule-945013
+            </infos>
+        </question>
+
+        <question>
+            <titre>Mélenchon convoqué par la justice dans l'affaire des Panama Papers</titre>
+            <reponses>
+                <reponse correct="1">Vrai</reponse>
+                <reponse>Faux</reponse>
+            </reponses>
+            <infos>
+                https://twitter.com/20HPolitique/status/867384832736862208
+            </infos>
+        </question>
+    </questions>
+</section>
+</sections>
