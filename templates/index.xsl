@@ -72,6 +72,8 @@
         <section class="section" id="generate-id(.)">
             <h1><xsl:value-of select="$titre_section" /></h1>
 
+            <p><em><xsl:value-of select="./desc" /></em></p>
+
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{count(questions/question)}">
                 <span><strong>0 / <xsl:value-of select="count(questions/question)" /></strong></span>
@@ -79,12 +81,14 @@
             </div>
     
             <xsl:for-each select="./questions/question">
-                <div class="question" id="generate-id(.)">
+                <div class="question" id="{generate-id(.)}">
                     <h2><xsl:value-of select="./titre" /></h2>
                     
                     <xsl:for-each select="./reponses/reponse">
                         <p><input type="radio" data-correct="{./@correct}" name="{generate-id(../..)}" /> <span><xsl:copy-of select="node()" /></span></p>
                     </xsl:for-each>
+
+                    <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                 </div>
             </xsl:for-each>
         </section>
@@ -100,6 +104,28 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
+
+    <script type="text/javascript">
+        current_question = '<xsl:value-of select="generate-id((//questions/question)[1])" />';
+
+        function answerCurrentQuestion()
+        {
+            var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
+            
+            alert(correct ? "correct" : "incorrect");
+        }
+
+        function displayNextQuestion()
+        {
+            next_question = '';
+        }
+
+        $( document ).ready(function() {
+            $('.btn-answer').click(answerCurrentQuestion);
+            $('.question').hide();
+            $('#' + current_question).show();
+        });
+    </script>
   </body>
 </html>
     </xsl:template>
