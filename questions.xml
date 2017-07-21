@@ -98,9 +98,9 @@
     <desc>Pour chacune des phrases suivantes, devinez qui l'a prononcée ou écrite !</desc>
     <questions>
         <question>
-            <titre></titre>
+            <titre>aaa</titre>
             <reponses>
-                <reponse></reponse>
+                <reponse>aa</reponse>
             </reponses>
         </question>
     </questions>

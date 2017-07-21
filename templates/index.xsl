@@ -24,6 +24,8 @@
     <style type="text/css">
         body { padding-top: 70px; }
 
+.question { display: none; }
+
 .progress {
     position: relative;
 }
@@ -108,6 +110,12 @@
     <script type="text/javascript">
         current_question = '<xsl:value-of select="generate-id((//questions/question)[1])" />';
 
+
+        function displayAnswer(correct)
+        {
+            
+        }
+
         function answerCurrentQuestion()
         {
             var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
@@ -117,12 +125,14 @@
 
         function displayNextQuestion()
         {
-            next_question = '';
+            next_question = $('#' + current_question).attr('id');
+            current_question = next_question;
+            $('#' + current_question).show();
         }
 
         $( document ).ready(function() {
             $('.btn-answer').click(answerCurrentQuestion);
-            $('.question').hide();
+            /* $('.question').hide(); */
             $('#' + current_question).show();
         });
     </script>
