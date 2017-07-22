@@ -135,14 +135,14 @@
             <titre>« Je vais vous traquer jusqu'au fond des chiottes, crétine »</titre>
             <reponses>
                 <reponse correct="1">Jean Quatremer (journaliste à Libération) à une sympathisante du Parti de Gauche</reponse>
-                <reponse>Jean-Marie Le Pen à une Femen</reponse>
+<!--                <reponse>Jean-Marie Le Pen à une Femen</reponse>-->
                 <reponse>Jean-Luc Mélenchon à une journaliste</reponse>
             </reponses>
         </question>
         <question>
             <titre>« […] le Conseil des ministres et la Commission sont noyautés par des haut-fonctionnaires allemands […] »</titre>
             <reponses>
-                <reponse>Jean Quatremer (journaliste à Libération)</reponse>
+                <reponse correct="1">Jean Quatremer (journaliste à Libération)</reponse>
                 <reponse>Jean-Luc Mélenchon</reponse>
             </reponses>
         </question>
@@ -183,6 +183,45 @@
                 <reponse>Seulement deux</reponse>
                 <reponse>Seulement un</reponse>
                 <reponse correct="1">Zéro</reponse>
+            </reponses>
+        </question>
+    </questions>
+</section>
+
+<section>
+    <titre>Le Front National, des journalistes, ou les deux ?</titre>
+    <desc>Pour chacune des questions suivantes, répondez soit "le FN", soit "des journalistes", soit "les deux".</desc>
+    <questions>
+        <question>
+            <titre>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconcque se sent fragile ou menacé » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Qui a dit : « Marine Le Pen, c'est notre star » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
+            <reponses>
+                <reponse>Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse correct="1">Les deux</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Qui a été condamné pour provocation à la haine ?</titre>
+            <reponses>
+                <reponse>Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse correct="1">Les deux</reponse>
             </reponses>
         </question>
     </questions>
