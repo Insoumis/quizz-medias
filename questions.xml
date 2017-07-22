@@ -11,7 +11,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                Il s'agit d'un éditorial à la une du Figaro, publié le 12 avril 2017 (premier tour de la Présidentielle : 23 avril). <br />
+                Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine. 
 
                 <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg" /></a>
             </infos>
@@ -24,7 +24,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 (premier tour de la Présidentielle : 23 avril). <br />
+                Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 ! <br />
 
                 <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
             </infos>
@@ -103,7 +103,7 @@
                 <reponse>Faux</reponse>
             </reponses>
             <infos>
-                C'était le titre d'un article de BFM TV. En effet, Mélenchon est convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Il avait en effet affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire.
+                C'était le titre d'un article de BFM TV. En effet, Mélenchon est convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
             </infos>
         </question>
     </questions>
@@ -129,6 +129,92 @@
             <reponses>
                 <reponse>Le Monde</reponse>
                 <reponse>Mediapart</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>« Mélenchon, le rouge qui clashe »</titre>
+            <reponses>
+                <reponse>Le Figaro</reponse>
+                <reponse>Minute</reponse>
+                <reponse correct="1">Libération</reponse>
+                <reponse>Valeurs Actuelles</reponse>
+            </reponses>
+            <infos>
+                <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png" /></a>
+            </infos>
+        </question>
+        <question>
+            <titre>« Je vais vous traquer jusqu'au fond des chiottes, crétine »</titre>
+            <reponses>
+                <reponse correct="1">Le journaliste Jean Quatremer à une sympathisante du Parti de Gauche</reponse>
+                <reponse>Jean-Marie Le Pen à une Femen</reponse>
+                <reponse>Jean-Luc Mélenchon à une journaliste</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>« Vous pouvez bouffer votre feuille [charte éthique d'un syndicat de journalistes] » « Et vous pouvez aussi vous étouffer après avec le code du travail [...] Ça me fera des vacances.» « Je préférerai (sic) que vous le mangiez avant [...] Histoire de maximiser les chances d'estouffade »</titre>
+            <reponses>
+                <reponse correct="1">Cédric Mathiot (journaliste à Libération)</reponse>
+                <reponse>Murielle Pénicaud (Ministre du travail)</reponse>
+            </reponses>
+        </question>
+    </questions>
+
+
+<!--
+« Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir, pour que Libération conserve ses valeurs. » (Blague d’un journaliste de Libération, 3 avril 2014)
+
+« L’équipe de Libé est pour l’heure l’honneur de la profession. » ( Autre blague d’un journaliste de Libération, 27 avril 2014)
+-->
+</section>
+<section>
+    <titre>Connaissez-vous bien les médias ?</titre>
+    <desc></desc>
+
+    <questions>
+        <question>
+            <titre>Quelle rédaction a écrit : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
+            <reponses>
+                <reponse>La rédaction de Fakir</reponse>
+                <reponse>La rédaction de Bastamag</reponse>
+                <reponse>La rédaction du Monde Diplomatique</reponse>
+                <reponse correct="1">La rédaction de Libération</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré 4 fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
+            <reponses>
+                <reponse>Toute la rédaction</reponse>
+                <reponse>Seulement deux</reponse>
+                <reponse>Seulement un</reponse>
+                <reponse correct="1">Zéro</reponse>
+            </reponses>
+        </question>
+    </questions>
+</section>
+
+<section>
+    <titre>Complétez cette phrase d'un journaliste</titre>
+    <desc></desc>
+
+    <questions>
+        <question>
+            <titre>« Éric Naulleau, à <em>On n'est pas couché</em>, à propos de Mélenchon : "Son modèle économique c'est ... »</titre>
+            <reponses>
+                <reponse>L'URSS des années 50</reponse>
+                <reponse correct="1">Le Vénézuela de Chavez</reponse>
+                <reponse>La Grèce de Tsipras</reponse>
+                <reponse>La Chine de Mao</reponse>
+                <reponse>L'écosocialisme</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Alexandre Poplavsky dans l'Est Républicain le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à chacune de ses sorties"</titre>
+            <reponses>
+                <reponse>prépare soigneusement</reponse>
+                <reponse>profère religieusement</reponse>
+                <reponse>hurle</reponse>
+                <reponse correct="1">gerbe</reponse>
             </reponses>
         </question>
     </questions>
