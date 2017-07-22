@@ -126,24 +126,27 @@ label {
 
                         <div class="answer">
                             <div class="row">
-                                <div class="col-sm-6 correct">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                                </div>
-                                <div class="col-sm-6 incorrect">
-                                    <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
-                                    <div>
-                                        <xsl:for-each select="./reponses/reponse">
-                                        <xsl:if test="./@correct = 1">
-                                            <strong><xsl:copy-of select="node()" /></strong>
-                                        </xsl:if>
-                                        </xsl:for-each>
+                                <div class="col-sm-6">
+                                    <div class="correct">
+                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
                                     </div>
+                                    <div class="incorrect">
+                                        <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
+                                        <div>
+                                            <xsl:for-each select="./reponses/reponse">
+                                            <xsl:if test="./@correct = 1">
+                                                <strong><xsl:copy-of select="node()" /></strong>
+                                            </xsl:if>
+                                            </xsl:for-each>
+                                        </div>
+                                    </div>
+                                    <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                                 </div>
                                 <div class="col-sm-6 infos">
                                     <xsl:copy-of select="./infos" />
                                 </div>
                             </div>
-                            <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                            
                         </div>
                     </div>
                 </xsl:for-each>
