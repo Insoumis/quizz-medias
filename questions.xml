@@ -241,8 +241,8 @@
 </section>
 
 <section>
-    <titre>Complétez cette phrase d'un journaliste</titre>
-    <desc></desc>
+    <titre>Le choix de la rédaction</titre>
+    <desc>Complétez la phrase d'un journaliste, ou trouvez l'illustration qu'il a choisie</desc>
 
     <questions>
         <question>
@@ -262,6 +262,15 @@
                 <reponse>profère religieusement</reponse>
                 <reponse>hurle</reponse>
                 <reponse correct="1">gerbe</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Laquelle de ces photos Europe 1 a choisi pour illustrer son article sur le passage de Mélenchon à <em>Des Paroles et Des Actes</em> ?</titre>
+            <reponses>
+                <reponse correct="1"><img src="images/choix1.jpg" /></reponse>
+                <reponse><img src="images/choix2.png" /></reponse>
+                <reponse><img src="images/choix3.png" /></reponse>
+                <reponse><img src="images/choix3.png" /></reponse>
             </reponses>
         </question>
     </questions>
