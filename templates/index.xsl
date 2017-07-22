@@ -14,7 +14,7 @@
     <meta name="author" content="" />
     <link rel="icon" href="../../favicon.ico" />
 
-    <title>Starter Template for Bootstrap</title>
+    <title>blabla</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
@@ -78,13 +78,13 @@ label {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Quizz Médias</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Jouer</a></li>
+            <li><a href="plus.html">Plus d'informations</a></li>
+            <li><a href="mailto:rouslan.gauchet@gmail.com">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -209,8 +209,6 @@ label {
             if (!next_question)
             {
                 next_section = $('#' + current_section).next().attr('id');
-                alert(next_section);
-
                 $('#' + current_section).hide();
 
                 if (!next_section)
@@ -226,8 +224,7 @@ label {
                 }
             }
             else
-            {
-                
+            {    
                 current_question = next_question;
                 $('#' + current_question).show();
             }
