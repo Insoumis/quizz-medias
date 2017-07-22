@@ -171,6 +171,8 @@
             <titre>Quelle rédaction a écrit : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
             <reponses>
                 <reponse>La rédaction de Fakir</reponse>
+                <reponse>La rédaction de Politis</reponse>
+                <reponse>La rédaction de Bastamag</reponse>
                 <reponse>La rédaction de Télérama</reponse>
                 <reponse>La rédaction du Monde Diplomatique</reponse>
                 <reponse correct="1">La rédaction de Libération</reponse>
