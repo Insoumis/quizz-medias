@@ -28,6 +28,8 @@
 
 .correct, .incorrect { font-size: 3em; }
 
+.answer img { max-width: 90%; }
+
 .progress {
     position: relative;
 }
