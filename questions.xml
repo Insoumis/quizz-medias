@@ -132,23 +132,18 @@
             </reponses>
         </question>
         <question>
-            <titre>« Mélenchon, le rouge qui clashe »</titre>
-            <reponses>
-                <reponse>Le Figaro</reponse>
-                <reponse>Minute</reponse>
-                <reponse correct="1">Libération</reponse>
-                <reponse>Valeurs Actuelles</reponse>
-            </reponses>
-            <infos>
-                <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png" /></a>
-            </infos>
-        </question>
-        <question>
             <titre>« Je vais vous traquer jusqu'au fond des chiottes, crétine »</titre>
             <reponses>
-                <reponse correct="1">Le journaliste Jean Quatremer à une sympathisante du Parti de Gauche</reponse>
+                <reponse correct="1">Jean Quatremer (journaliste à Libération) à une sympathisante du Parti de Gauche</reponse>
                 <reponse>Jean-Marie Le Pen à une Femen</reponse>
                 <reponse>Jean-Luc Mélenchon à une journaliste</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>« […] le Conseil des ministres et la Commission sont noyautés par des haut-fonctionnaires allemands […] »</titre>
+            <reponses>
+                <reponse>Jean Quatremer (journaliste à Libération)</reponse>
+                <reponse>Jean-Luc Mélenchon</reponse>
             </reponses>
         </question>
         <question>
