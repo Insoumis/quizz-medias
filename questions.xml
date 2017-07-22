@@ -217,6 +217,19 @@
             </reponses>
         </question>
         <question>
+            <titre>Qui a dit : « [...] ses propos [de Merkel] ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+            <infos>
+                C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air". <br />
+
+                <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228" />
+            </infos>
+        </question>
+        <question>
             <titre>Qui a été condamné pour provocation à la haine ?</titre>
             <reponses>
                 <reponse>Des journalistes</reponse>
