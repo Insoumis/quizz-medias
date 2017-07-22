@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
     <style type="text/css">
-        body { padding-top: 70px; }
+        body { padding-top: 70px; font-size: 1.8em; }
 
 .question, .answer, .section, .incorrect, .correct, #score { display: none; }
 
-.correct, .incorrect { font-size: 3em; }
+.correct, .incorrect {  }
 
 .answer img { max-width: 90%; }
 
@@ -48,12 +48,10 @@ form, input {
 
 label {
     padding-left: 0.5em;
-    font-size: 2em;
     font-weight: normal;
 }
 
 .btn-next, .btn-answer {
-    font-size: 2em;
 }
 
 .progress span {

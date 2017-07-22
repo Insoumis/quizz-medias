@@ -24,7 +24,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos>
-                Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 ! <br />
+                <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
 
                 <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
             </infos>
@@ -48,7 +48,9 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos>
-                Il s'agit du titre d'un article du Point <br /><a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png" /></a>
+                <p>Il s'agit du titre d'un article du Point</p>
+
+                <a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png" /></a>
             </infos>
         </question>
 
@@ -163,12 +165,12 @@
 -->
 </section>
 <section>
-    <titre>Connaissez-vous bien les médias ?</titre>
-    <desc></desc>
+    <titre>Le petit cercle des médias</titre>
+    <desc>Quelques questions sur le monde fermé des journalistes</desc>
 
     <questions>
         <question>
-            <titre>Quelle rédaction a écrit : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
+            <titre>Quelle rédaction a écrit dans son journal : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
             <reponses>
                 <reponse>La rédaction de Fakir</reponse>
                 <reponse>La rédaction de Politis</reponse>
@@ -179,7 +181,7 @@
             </reponses>
         </question>
         <question>
-            <titre>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré 4 fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
+            <titre>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré quatre fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
             <reponses>
                 <reponse>Toute la rédaction</reponse>
                 <reponse>Seulement deux</reponse>
@@ -219,14 +221,14 @@
             </reponses>
         </question>
         <question>
-            <titre>Qui a dit : « [...] ses propos [de Merkel] ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
+            <titre>Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
             <reponses>
                 <reponse correct="1">Des journalistes</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
             <infos>
-                C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air". <br />
+                <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".</p>
 
                 <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228" />
             </infos>
