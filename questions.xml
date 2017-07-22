@@ -1,14 +1,14 @@
 <sections>
 <section>
-    <titre>Vrai titre ou faux titre ?</titre>
+    <titre>Ont-ils vraiment osé ?</titre>
     <desc>Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux titre de presse.</desc>
 
     <questions>
         <question>
             <titre>« Maximilien Ilitch Mélenchon »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine. 
@@ -20,8 +20,8 @@
         <question>
             <titre>« Mélenchon : le délirant projet du Chavez Français »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 ! <br />
@@ -33,8 +33,8 @@
         <question>
             <titre>« Mélenchon, sans-culotte ou sans c... »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
@@ -44,8 +44,8 @@
         <question>
             <titre>« Comment Emmanuel Macron est devenu "leader du monde libre" »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 Il s'agit du titre d'un article du Point <br /><a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png" /></a>
@@ -55,8 +55,8 @@
         <question>
             <titre>« Faites ce que vous voulez, mais votez Macron »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 <a href="https://opiam.fr/2017/05/06/libetorchon0505/" target="_blank"><img src="http://md0.libe.com/api/libe/v2/paperpage/241881/?format=jpg&amp;size=x500" /></a>
@@ -66,8 +66,8 @@
         <question>
             <titre>« Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 Il s'agit du titre d'un <a href="https://www.challenges.fr/politique/melenchon-ruffin-et-les-sans-cravates-une-menace-a-prendre-au-serieux_483514">éditorial de Bruno Roger-Petit pour Challenges</a>.
@@ -77,8 +77,8 @@
         <question>
             <titre>« Jean-Luc Mélenchon, un mirage dangereux »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 C'est le titre d'une <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170421.OBS8314/jean-luc-melenchon-un-mirage-dangereux.html">tribune d'Henri Weber</a> parue dans l'Obs à deux jours du premier tour de la Présidentielle.
@@ -88,8 +88,8 @@
         <question>
             <titre>« Mélenchon vous "manipule" »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a>.
@@ -99,8 +99,8 @@
         <question>
             <titre>« Mélenchon convoqué par la justice dans l'affaire des Panama Papers »</titre>
             <reponses>
-                <reponse correct="1">Vrai</reponse>
-                <reponse>Faux</reponse>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
             </reponses>
             <infos>
                 C'était le titre d'un article de BFM TV. En effet, Mélenchon est convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
