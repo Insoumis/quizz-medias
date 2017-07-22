@@ -272,7 +272,7 @@
                 <reponse correct="1"><img src="images/choix1.jpg" /></reponse>
                 <reponse><img src="images/choix2.png" /></reponse>
                 <reponse><img src="images/choix3.png" /></reponse>
-                <reponse><img src="images/choix3.png" /></reponse>
+                <reponse><img src="images/choix4.png" /></reponse>
             </reponses>
         </question>
     </questions>
