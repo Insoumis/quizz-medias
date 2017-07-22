@@ -117,7 +117,7 @@
             <reponses>
                 <reponse>Le Figaro</reponse>
                 <reponse>Minute</reponse>
-                <reponse>Libération</reponse>
+                <reponse correct="1">Libération</reponse>
                 <reponse>Valeurs Actuelles</reponse>
             </reponses>
             <infos>
@@ -128,7 +128,7 @@
             <titre>« Jean-Luc Mélenchon joue à saute-cadavre »</titre>
             <reponses>
                 <reponse>Le Monde</reponse>
-                <reponse>Mediapart</reponse>
+                <reponse correct="1">Mediapart</reponse>
             </reponses>
         </question>
         <question>
