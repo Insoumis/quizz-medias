@@ -94,7 +94,8 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos>
-                C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a>.
+                <p>C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a></p>
+                <img src="images/manipule.jpg" />
             </infos>
         </question>
 
@@ -197,7 +198,7 @@
     <desc>Pour chacune des questions suivantes, répondez soit "le FN", soit "des journalistes", soit "les deux".</desc>
     <questions>
         <question>
-            <titre>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconcque se sent fragile ou menacé » ?</titre>
+            <titre>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconque se sent fragile ou menacé » ?</titre>
             <reponses>
                 <reponse correct="1">Des journalistes</reponse>
                 <reponse>Le Front National</reponse>
@@ -286,6 +287,9 @@
                 <reponse>hurle</reponse>
                 <reponse correct="1">gerbe</reponse>
             </reponses>
+            <infos>
+                <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".</p>
+            </infos>
         </question>
         <question>
             <titre>Dans son article pour <em>Europe 1</em> intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image le journaliste a-t-il voulu que le lecteur retienne ?</titre>
@@ -297,7 +301,7 @@
             </reponses>
         </question>
         <question>
-            <titre>Pour illustrer des articles sur l'arrivée de Mélenchon à l'AN, quelle image est la plus appropriée pour <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
+            <titre>Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
             <reponses>
                 <reponse><img src="images/an1.jpg" height="175" /></reponse>
                 <reponse correct="1"><img src="images/an2.jpg" height="175" /></reponse>
@@ -315,12 +319,30 @@
                 <reponse correct="1">tout ça à la fois</reponse>
             </reponses>
             <infos>
-                <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, *Huffington Post*</p>
-                <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, *L'Opinion*</p>
-                <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, *Libération*.</p>
+                <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, <em>Huffington Post</em></p>
+                <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
+                <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, <em>Libération</em>.</p>
                 <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !</p>
             </infos>
         </question>
+        <question>
+            <titre>Pour <em>Libération</em>, critiquer les journalistes, est-ce acceptable ?</titre>
+            <reponses>
+                <reponse>Acceptable</reponse>
+                <reponse correct="1">Inacceptable</reponse>
+            </reponses>
+            <infos>
+                « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu Écoiffier, <em>Libération</em>.
+            </infos>
+        </question>
+        <question>
+            <titre>Pour <em>Libération</em>, assimiler Mélenchon à Hitler, Le Pen, Staline, est-ce acceptable ?</titre>
+            <reponses>
+                <reponse correct="1">Acceptable</reponse>
+                <reponse>Inacceptable</reponse>
+            </reponses>
+        </question>
+        <infos>Si critiquer les journalistes est "inacceptable", on peut </infos>
     </questions>
 </section>
 </sections>
