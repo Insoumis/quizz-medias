@@ -240,9 +240,6 @@ label {
             var cq = $('#' + current_question);
             $('#' + current_section + ' .progress-bar span strong').text(cq.data('pos') + ' / ' + cq.data('count'));
             $('#' + current_section + ' .progress-bar').css('width', 100*cq.data('pos')/cq.data('count') + '%');
-
-            $('#score_status .progress-bar span strong').text(points + ' / ' + completed + ' réponses correctes');
-            $('#score_status .progress-bar').css('width', 100*points/completed + '%');
         }
 
         function answerCurrentQuestion()
@@ -251,6 +248,9 @@ label {
             completed++;
             if (correct)
                 points++;
+
+            $('#score_status .progress-bar span strong').text(points + ' / ' + completed + ' réponses correctes');
+            $('#score_status .progress-bar').css('width', 100*points/completed + '%');
 
             displayAnswer(correct);
         }
