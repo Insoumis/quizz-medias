@@ -191,11 +191,11 @@
             </reponses>
         </question>
         <question>
-            <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée à TMC. Combien a-t-il gagné en 2016 ?</titre>
+            <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016 ?</titre>
             <reponses>
                 <reponse>environ 300 000 euros</reponse>
                 <reponse>environ 3 000 000 euros</reponse>
-                <reponse>environ 30 000 000 euros</reponse>
+                <reponse correct="1">environ 30 000 000 euros</reponse>
             </reponses>
             <infos>
                 Plus exactement, Yann Barthès a gagné <a href="http://www.parismatch.com/People/Marion-Cotillard-Yann-Barthes-Les-salaires-mirobolants-des-stars-en-2016-1198160">27 millions d'euros</a> en 2016.
