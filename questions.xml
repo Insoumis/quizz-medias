@@ -299,8 +299,8 @@
         <question>
             <titre>Pour illustrer des articles sur l'arrivée de Mélenchon à l'AN, quelle image est la plus appropriée pour <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
             <reponses>
-                <reponse correct="1"><img src="images/an1.jpg" height="175" /></reponse>
-                <reponse><img src="images/an2.jpg" height="175" /></reponse>
+                <reponse><img src="images/an1.jpg" height="175" /></reponse>
+                <reponse correct="1"><img src="images/an2.jpg" height="175" /></reponse>
                 <reponse><img src="images/an3.jpg" height="175" /></reponse>
                 <reponse><img src="images/an4.jpg" height="175" /></reponse>
             </reponses>
