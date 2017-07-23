@@ -290,7 +290,7 @@
         <question>
             <titre>Dans son article pour Europe 1 intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image Thibaut Pézerat a-t-il retenu ?</titre>
             <reponses>
-                <reponse correct="1"><img src="images/choix1.jpg" height="200" /></reponse>
+                <reponse correct="1"><img src="images/choix1.jpg" height="175" /></reponse>
                 <reponse><img src="images/choix2.png" height="175" /></reponse>
                 <reponse><img src="images/choix3.png" height="175" /></reponse>
                 <reponse><img src="images/choix4.png" height="175" /></reponse>
