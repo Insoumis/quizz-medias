@@ -310,18 +310,32 @@
             </reponses>
         </question>
         <question>
+            <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
+            <reponses>
+                <reponse correct="1"><img src="images/prado1.png" height="175" /></reponse>
+                <reponse><img src="images/prado2.png" height="175" /></reponse>
+            </reponses>
+            <infos>
+                <img src="images/retenir.png" />
+            </infos>
+        </question>
+        <question>
             <titre>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste, écologiste) sont :</titre>
             <reponses>
                 <reponse>jumeaux</reponse>
                 <reponse>mariés</reponse>
                 <reponse>en couple</reponse>
                 <reponse>unis</reponse>
+                <reponse>en tandem</reponse>
+                <reponse>main dans la main</reponse>
                 <reponse correct="1">tout ça à la fois</reponse>
             </reponses>
             <infos>
                 <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, <em>Huffington Post</em></p>
                 <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
                 <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, <em>Libération</em>.</p>
+                <p>« Parole de candidats décolle avec le tandem Le Pen-Mélenchon ». 6 mars 2012, Emmanuel Berretta, <em>Le Point</em>.</p>
+                <p>« Aujourd’hui franchement si vous regardez par exemple, il y a quelque chose d’intéressant c’est que, sur la Russie, Marine Le Pen et Jean-Luc Mélenchon marchent main dans la main. ». Piotr Smolar, 9 mai 2014, dans <em>Arrêt sur images</em>.</p>
                 <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !</p>
             </infos>
         </question>
@@ -343,17 +357,6 @@
             </reponses>
         </question>
         <infos></infos>
-
-        <question>
-            <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
-            <reponses>
-                <reponse correct="1"><img src="images/prado1.png" height="175" /></reponse>
-                <reponse><img src="images/prado2.png" height="175" /></reponse>
-            </reponses>
-        </question>
-        <infos>
-            <img src="images/retenir.png" />
-        </infos>
     </questions>
 </section>
 </sections>
