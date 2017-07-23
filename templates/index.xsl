@@ -99,7 +99,7 @@ label {
       <div id="score_status">
         <div class="progress">
           <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{count(//questions/question)}" style="width: 0px;" >
-            <span><strong>1 / <xsl:value-of select="count(//questions/question)" /></strong></span>
+            <span><strong>0 / 0 réponse correcte</strong></span>
           </div>
         </div>
       </div>
@@ -115,8 +115,8 @@ label {
 
                 <div class="progress">
                   <xsl:variable name="pourcentage" select="100 * position() div $nombre_questions" />
-                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
-                    <span><strong>0 / <xsl:value-of select="count(questions/question)" /> réponses correctes</strong></span>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
+                    <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
                   </div>
                 </div>
     
