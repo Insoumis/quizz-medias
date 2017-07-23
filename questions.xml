@@ -351,6 +351,9 @@
                 <reponse><img src="images/prado2.png" height="175" /></reponse>
             </reponses>
         </question>
+        <infos>
+            <img src="images/retenir.png" />
+        </infos>
     </questions>
 </section>
 </sections>
