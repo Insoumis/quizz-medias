@@ -105,7 +105,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos>
-                C'était le titre d'un article de BFM TV. En effet, Mélenchon est convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
+                C'était le titre d'un article de BFM TV. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
             </infos>
         </question>
     </questions>
@@ -204,13 +204,24 @@
                 <reponse>Les deux</reponse>
             </reponses>
         </question>
-        <question>
+        <!--<question>
             <titre>Qui a dit : « Marine Le Pen, c'est notre star » ?</titre>
             <reponses>
                 <reponse correct="1">Des journalistes</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
+        </question>-->
+        <question>
+            <titre>Qui a dit : « La rébellion ne se niche plus dans le vote rouge mais bleu marine » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+            <infos>
+                
+            </infos>
         </question>
         <question>
             <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
@@ -240,6 +251,14 @@
                 <reponse>Le Front National</reponse>
                 <reponse correct="1">Les deux</reponse>
             </reponses>
+            <infos>
+                <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour provocation à la haine, en ayant tenu, entre autres, les propos suivants sur le service public :</p>
+                <blockquote>
+                    « Les soldats du djihad sont considérés par tous les musulmans comme des bons musulmans »
+                </blockquote>
+                <p>À titre de comparaison, Henry de Lesquen, l' ex patron de Radio Courtoisie raciste, antisémite et opposé à l'état de droit n'a été condamné qu'une fois pour ce délit.</p>
+                <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
+            </infos>
         </question>
     </questions>
 </section>
@@ -269,12 +288,12 @@
             </reponses>
         </question>
         <question>
-            <titre>Laquelle de ces photos Europe 1 a choisi pour illustrer son article sur le passage de Mélenchon à <em>Des Paroles et Des Actes</em> ?</titre>
+            <titre>Dans son article pour Europe 1 intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image Thibaut Pézerat a-t-il retenu ?</titre>
             <reponses>
-                <reponse correct="1"><img src="images/choix1.jpg" /></reponse>
-                <reponse><img src="images/choix2.png" /></reponse>
-                <reponse><img src="images/choix3.png" /></reponse>
-                <reponse><img src="images/choix4.png" /></reponse>
+                <reponse correct="1"><img src="images/choix1.jpg" height="200" /></reponse>
+                <reponse><img src="images/choix2.png" height="175" /></reponse>
+                <reponse><img src="images/choix3.png" height="175" /></reponse>
+                <reponse><img src="images/choix4.png" height="175" /></reponse>
             </reponses>
         </question>
     </questions>
