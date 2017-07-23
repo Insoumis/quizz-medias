@@ -342,7 +342,15 @@
                 <reponse>Inacceptable</reponse>
             </reponses>
         </question>
-        <infos>Si critiquer les journalistes est "inacceptable", on peut </infos>
+        <infos></infos>
+
+        <question>
+            <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
+            <reponses>
+                <reponse correct="1"><img src="images/prado1.png" height="175" /></reponse>
+                <reponse><img src="images/prado2.png" height="175" /></reponse>
+            </reponses>
+        </question>
     </questions>
 </section>
 </sections>
