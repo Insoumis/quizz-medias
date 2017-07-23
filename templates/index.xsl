@@ -96,6 +96,13 @@ label {
         <h1>Quizz Médias</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br /> All you get is this text and a mostly barebones HTML document.</p>
       </div>-->
+      <div id="score_status">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{count(//questions/question)}" style="width: 0px;" >
+            <span><strong>1 / <xsl:value-of select="count(//questions/question)" /></strong></span>
+          </div>
+        </div>
+      </div>
 
       <div id="sections">
           <xsl:for-each select="/sections/section">
@@ -108,8 +115,8 @@ label {
 
                 <div class="progress">
                   <xsl:variable name="pourcentage" select="100 * position() div $nombre_questions" />
-                  <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
-                    <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
+                    <span><strong>0 / <xsl:value-of select="count(questions/question)" /> réponses correctes</strong></span>
                   </div>
                 </div>
     
@@ -233,6 +240,9 @@ label {
             var cq = $('#' + current_question);
             $('#' + current_section + ' .progress-bar span strong').text(cq.data('pos') + ' / ' + cq.data('count'));
             $('#' + current_section + ' .progress-bar').css('width', 100*cq.data('pos')/cq.data('count') + '%');
+
+            $('#score_status .progress-bar span strong').text(points + ' / ' + completed + ' réponses correctes');
+            $('#score_status .progress-bar').css('width', 100*points/completed + '%');
         }
 
         function answerCurrentQuestion()
