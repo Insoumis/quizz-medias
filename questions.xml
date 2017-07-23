@@ -265,7 +265,7 @@
 
 <section>
     <titre>Le choix de la rédaction</titre>
-    <desc>Complétez la phrase d'un journaliste, ou trouvez l'illustration qu'il a choisie</desc>
+    <desc>Pour chacune des questions suivantes, retrouvez le choix du journaliste</desc>
 
     <questions>
         <question>
@@ -288,13 +288,38 @@
             </reponses>
         </question>
         <question>
-            <titre>Dans son article pour Europe 1 intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image Thibaut Pézerat a-t-il retenu ?</titre>
+            <titre>Dans son article pour <em>Europe 1</em> intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image le journaliste a-t-il voulu que le lecteur retienne ?</titre>
             <reponses>
                 <reponse correct="1"><img src="images/choix1.jpg" height="175" /></reponse>
                 <reponse><img src="images/choix2.png" height="175" /></reponse>
                 <reponse><img src="images/choix3.png" height="175" /></reponse>
                 <reponse><img src="images/choix4.png" height="175" /></reponse>
             </reponses>
+        </question>
+        <question>
+            <titre>Pour illustrer des articles sur l'arrivée de Mélenchon à l'AN, quelle image est la plus appropriée pour <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
+            <reponses>
+                <reponse correct="1"><img src="images/an1.jpg" height="175" /></reponse>
+                <reponse><img src="images/an2.jpg" height="175" /></reponse>
+                <reponse><img src="images/an3.jpg" height="175" /></reponse>
+                <reponse><img src="images/an4.jpg" height="175" /></reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste, écologiste) sont :</titre>
+            <reponses>
+                <reponse>jumeaux</reponse>
+                <reponse>mariés</reponse>
+                <reponse>en couple</reponse>
+                <reponse>unis</reponse>
+                <reponse correct="1">tout ça à la fois</reponse>
+            </reponses>
+            <infos>
+                <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, *Huffington Post*</p>
+                <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, *L'Opinion*</p>
+                <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, *Libération*.</p>
+                <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !</p>
+            </infos>
         </question>
     </questions>
 </section>
