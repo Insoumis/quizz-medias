@@ -28,6 +28,7 @@
 
 .correct, .incorrect {  }
 
+label img { border: 1px solid black; }
 .answer img { max-width: 90%; }
 
 .progress {
