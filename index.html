@@ -10,22 +10,86 @@
       <title>blabla</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><style type="text/css">
-        body { padding-top: 70px; font-size: 1.8em; }
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-.question, .answer, .section, .incorrect, .correct, #score { display: none; }
+body {
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 1.8em;
+    padding-top: 100px;
+}
 
-.correct, .incorrect {  }
+h1 {
+    font-family: Montserrat, sans-serif;
+    margin-top: 60px;
+}
 
-label img { border: 1px solid black; }
-.answer img { max-width: 90%; }
+.navbar {
+    background: #c9462c;
+    border-bottom: 1px solid #bc4229;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8em;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    text-shadow: 0 1px 2px rgba(0,0,0, 0.4);
+    transition: .2s;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background: none;
+    border-bottom: 3px solid #fff;
+    box-shadow: none;
+}
 
 .progress {
+    height: 30px;
     position: relative;
 }
 
-label, input {
-    display: inline-block;
-    vertical-align: baseline;
+.progress span {
+    color: #004e65;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2em;
+    line-height: 30px;
+    position: absolute;
+    text-shadow: 0 1px 1px rgba(255,255,255, 0.6);
+    width: 100%;
+}
+
+.progress-bar-success {background: #33b9d3;}
+
+.subtitle {margin-bottom: 20px;}
+
+.sub-progress span {color: #560000;}
+
+.sub-progress .progress-bar {background: #d1270c;}
+
+.question {
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.12);
+    margin: 40px auto;
+    padding: 40px;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    margin: 0 0 30px;
 }
 
 form, input {
@@ -34,25 +98,66 @@ form, input {
     -webkit-box-sizing: border-box;
 }
 
+form {margin: 0; margin-left: 40px;}
+
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+}
 
 label {
-    padding-left: 0.5em;
     font-weight: normal;
+    line-height: 1.9em;
+    padding-left: 0.5em;
 }
 
-.btn-next, .btn-answer {
-}
-
-.progress span {
-    position: absolute;
+.btn-primary {
+    background: #33b9d3;
+    border: 0;
     display: block;
-    width: 100%;
-    color: black;
- }
-
-.btn-next-container {
-    margin-top: 2em;
+    margin: 35px auto 0;
+    padding: 6px 60px;
+    transition: .2s;
 }
+
+.btn-primary:hover {background: #1b90a7;}
+
+.answer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.glyphicon-ok {color: #33b9d3;}
+.glyphicon-remove {color: #d1270c;}
+
+.answer ul {
+    list-style: none;
+    margin: 10px 0 35px;
+    padding: 0;
+}
+
+.infos {
+    width: 50%;
+    margin: auto;
+}
+
+.infos p,
+.infos img {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.infos a {color: #33b9d3;}
+
+label img {
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.answer img { max-width: 90%; }
+
+.question, .answer, .section, .incorrect, .correct, #score { display: none; }
+
     </style></head>
    <body>
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -92,23 +197,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Le Vénézuela de Chavez</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Le Vénézuela de Chavez</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e40" data-pos="2" data-count="8">
@@ -124,30 +225,26 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>gerbe</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>gerbe</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".
                               </p>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e70" data-pos="3" data-count="8">
@@ -163,28 +260,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong><img src="images/choix1.jpg" height="175"></strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong><img src="images/choix1.jpg" height="175"></strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <img srch="images/cqfr.jpg">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e102" data-pos="4" data-count="8">
@@ -200,28 +293,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong><img src="images/an2.jpg" height="175"></strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong><img src="images/an2.jpg" height="175"></strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <img src="images/cravates.png">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e137" data-pos="5" data-count="8">
@@ -235,28 +324,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong><img src="images/prado1.png" height="175"></strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong><img src="images/prado1.png" height="175"></strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <img src="images/retenir.png">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e161" data-pos="6" data-count="8">
@@ -275,27 +360,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>jumeaux</strong></li>
-                                    <li><strong>mariés</strong></li>
-                                    <li><strong>en couple</strong></li>
-                                    <li><strong>unis</strong></li>
-                                    <li><strong>en tandem</strong></li>
-                                    <li><strong>main dans la main</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>jumeaux</strong></li>
+                                 <li><strong>mariés</strong></li>
+                                 <li><strong>en couple</strong></li>
+                                 <li><strong>unis</strong></li>
+                                 <li><strong>en tandem</strong></li>
+                                 <li><strong>main dans la main</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet,
@@ -318,8 +400,7 @@ label {
                               </p>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e232" data-pos="7" data-count="8">
@@ -331,29 +412,25 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Inacceptable</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Inacceptable</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu
                               Écoiffier, <em>Libération</em>.
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e256" data-pos="8" data-count="8">
@@ -365,23 +442,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Acceptable</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Acceptable</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
@@ -406,23 +479,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>La rédaction de Libération</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>La rédaction de Libération</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e316" data-pos="2" data-count="4">
@@ -438,23 +507,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Zéro</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Zéro</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e337" data-pos="3" data-count="4">
@@ -469,28 +534,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>environ 30 000 000 euros</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>environ 30 000 000 euros</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               Plus exactement, Yann Barthès a gagné <a href="http://www.lepoint.fr/people/salaires-des-stars-francaises-capital-balance-les-chiffres-26-02-2017-2107596_2116.php">27 millions d'euros</a> en 2016.
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e364" data-pos="4" data-count="4">
@@ -505,23 +566,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>À l'ouvrier Philippe Poutou</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>À l'ouvrier Philippe Poutou</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
@@ -541,23 +598,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Un journaliste</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Un journaliste</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e413" data-pos="2" data-count="5">
@@ -570,28 +623,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Un journaliste</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Un journaliste</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e434" data-pos="3" data-count="5">
@@ -604,23 +653,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Les deux</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Les deux</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e452" data-pos="4" data-count="5">
@@ -635,22 +680,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Un journaliste</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Un journaliste</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".
@@ -659,8 +701,7 @@ label {
                               <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e482" data-pos="5" data-count="5">
@@ -673,22 +714,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Les deux</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Les deux</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour
@@ -707,8 +745,7 @@ label {
                               <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
@@ -728,22 +765,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc
                               à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine. 
@@ -751,8 +785,7 @@ label {
                               <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg"></a>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e548" data-pos="2" data-count="10">
@@ -764,22 +797,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
@@ -787,8 +817,7 @@ label {
                               <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg"></a>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e572" data-pos="3" data-count="10">
@@ -800,25 +829,21 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul></ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul></ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e587" data-pos="4" data-count="10">
@@ -830,28 +855,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e608" data-pos="5" data-count="10">
@@ -863,28 +884,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <a href="http://tempsreel.nouvelobs.com/signatures/le-coup-de-sang-de-serge-raffy/20120316.OBS3929/melenchon-piege-a-c.html"><img src="images/piege_a_cons.png"></a>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e630" data-pos="6" data-count="10">
@@ -896,22 +913,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>Il s'agit du titre d'un article du Point</p>
@@ -919,8 +933,7 @@ label {
                               <a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png"></a>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e654" data-pos="7" data-count="10">
@@ -932,28 +945,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <a href="https://opiam.fr/2017/05/06/libetorchon0505/" target="_blank"><img src="http://md0.libe.com/api/libe/v2/paperpage/241881/?format=jpg&amp;size=x500"></a>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e675" data-pos="8" data-count="10">
@@ -965,22 +974,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>Il s'agit du titre d'un "&gt;éditorial de Bruno Roger-Petit pour Challenges</p>
@@ -988,8 +994,7 @@ label {
                               <a href="https://www.challenges.fr/politique/melenchon-ruffin-et-les-sans-cravates-une-menace-a-prendre-au-serieux_483514"><img src="images/sans-cravate.png"></a>.
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e701" data-pos="9" data-count="10">
@@ -1001,30 +1006,26 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               
                               <p>C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a></p>
                               <img src="images/manipule.jpg">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e726" data-pos="10" data-count="10">
@@ -1036,22 +1037,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Vrai titre</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Vrai titre</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               C'était le titre d'un article de BFM TV. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale
                               a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant
@@ -1060,8 +1058,7 @@ label {
                               à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
@@ -1082,28 +1079,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Libération</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Libération</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png"></a>
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e786" data-pos="2" data-count="5">
@@ -1115,23 +1108,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Mediapart</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Mediapart</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e801" data-pos="3" data-count="5">
@@ -1143,28 +1132,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Jean Quatremer (journaliste à Libération) à une sympathisante du Parti de Gauche</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Jean Quatremer (journaliste à Libération) à une sympathisante du Parti de Gauche</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <img src="images/cretine.jpg">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e823" data-pos="4" data-count="5">
@@ -1176,23 +1161,19 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Jean Quatremer dans <em>Libération</em></strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos"></div>
-                     </div>
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Jean Quatremer dans <em>Libération</em></strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e842" data-pos="5" data-count="5">
@@ -1207,28 +1188,24 @@ label {
                   </form>
                   <div class="answer">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                              
-                           </div>
-                           <div class="incorrect">
-                              <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
-                              </div>
-                              <div>
-                                 <ul>
-                                    <li><strong>Cédric Mathiot (journaliste à Libération)</strong></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
+                           
                         </div>
-                        <div class="col-sm-6 infos">
+                        <div class="incorrect">
+                           <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :
+                           </div>
+                           <div>
+                              <ul>
+                                 <li><strong>Cédric Mathiot (journaliste à Libération)</strong></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="infos">
                            <infos>
                               <img src="images/mathiot.png">
                               
                            </infos>
-                        </div>
-                     </div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
@@ -1288,7 +1265,7 @@ label {
                 }
             }
             else
-            {    
+            {
                 current_question = next_question;
                 $('#' + current_question).show();
             }
@@ -1324,7 +1301,7 @@ label {
             $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
             $('#' + current_question).show();
-            
+
         });
     </script></body>
 </html>
