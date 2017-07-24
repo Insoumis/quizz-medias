@@ -141,8 +141,7 @@ label {
     margin: auto;
 }
 
-.infos p,
-.infos img {
+.infos > div {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 4px;
@@ -182,7 +181,7 @@ label img {
             <section class="section" id="d1e3">
                <h1>Le choix de la rédaction</h1>
                <p><em>Pour chacune des questions suivantes, retrouvez le choix du journaliste</em></p>
-               <div class="progress">
+               <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="8" style="width: 12.5%;"><span><strong>1 / 8</strong></span></div>
                </div>
                <div class="question" id="d1e13" data-pos="1" data-count="8">
@@ -209,7 +208,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e40" data-pos="2" data-count="8">
@@ -238,12 +239,14 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".
-                              </p>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".
+                                 </p>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -273,10 +276,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <img srch="images/cqfr.jpg">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <img src="images/cqfr.jpg">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -306,10 +311,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <img src="images/cravates.png">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <img src="images/cravates.png">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -337,10 +344,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <img src="images/retenir.png">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <img src="images/retenir.png">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -378,28 +387,30 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet,
-                                 <em>Huffington Post</em></p>
-                              
-                              <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
-                              
-                              <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu
-                                 Lindon, <em>Libération</em>.
-                              </p>
-                              
-                              <p>« Parole de candidats décolle avec le tandem Le Pen-Mélenchon ». 6 mars 2012, Emmanuel Berretta, <em>Le Point</em>.
-                              </p>
-                              
-                              <p>« Aujourd’hui franchement si vous regardez par exemple, il y a quelque chose d’intéressant c’est que, sur la Russie, Marine
-                                 Le Pen et Jean-Luc Mélenchon marchent main dans la main. ». Piotr Smolar, 9 mai 2014, dans <em>Arrêt sur images</em>.
-                              </p>
-                              
-                              <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !
-                              </p>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet,
+                                    <em>Huffington Post</em></p>
+                                 
+                                 <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
+                                 
+                                 <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu
+                                    Lindon, <em>Libération</em>.
+                                 </p>
+                                 
+                                 <p>« Parole de candidats décolle avec le tandem Le Pen-Mélenchon ». 6 mars 2012, Emmanuel Berretta, <em>Le Point</em>.
+                                 </p>
+                                 
+                                 <p>« Aujourd’hui franchement si vous regardez par exemple, il y a quelque chose d’intéressant c’est que, sur la Russie, Marine
+                                    Le Pen et Jean-Luc Mélenchon marchent main dans la main. ». Piotr Smolar, 9 mai 2014, dans <em>Arrêt sur images</em>.
+                                 </p>
+                                 
+                                 <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !
+                                 </p>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -425,11 +436,13 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu
-                              Écoiffier, <em>Libération</em>.
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu
+                                 Écoiffier, <em>Libération</em>.
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -454,14 +467,16 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
             <section class="section" id="d1e278">
                <h1>Le petit cercle des médias</h1>
                <p><em>Quelques questions sur le monde homogène et fermé des journalistes</em></p>
-               <div class="progress">
+               <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" style="width: 50%;"><span><strong>1 / 4</strong></span></div>
                </div>
                <div class="question" id="d1e288" data-pos="1" data-count="4">
@@ -491,7 +506,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e316" data-pos="2" data-count="4">
@@ -519,7 +536,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e337" data-pos="3" data-count="4">
@@ -547,10 +566,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              Plus exactement, Yann Barthès a gagné <a href="http://www.lepoint.fr/people/salaires-des-stars-francaises-capital-balance-les-chiffres-26-02-2017-2107596_2116.php">27 millions d'euros</a> en 2016.
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 Plus exactement, Yann Barthès a gagné <a href="http://www.lepoint.fr/people/salaires-des-stars-francaises-capital-balance-les-chiffres-26-02-2017-2107596_2116.php">27 millions d'euros</a> en 2016.
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -578,14 +599,16 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
             </section>
             <section class="section" id="d1e384">
                <h1>Le Front National, un journaliste, ou les deux ?</h1>
                <p><em></em></p>
-               <div class="progress">
+               <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 60%;"><span><strong>1 / 5</strong></span></div>
                </div>
                <div class="question" id="d1e393" data-pos="1" data-count="5">
@@ -610,7 +633,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e413" data-pos="2" data-count="5">
@@ -636,10 +661,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -665,7 +692,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e452" data-pos="4" data-count="5">
@@ -693,14 +722,16 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".
-                              </p>
-                              
-                              <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".
+                                 </p>
+                                 
+                                 <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -727,24 +758,26 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour
-                                 provocation à la haine, en ayant tenu, entre autres, les propos suivants sur le service public :
-                              </p>
-                              
-                              <blockquote>
-                                 « Les soldats du djihad sont considérés par tous les musulmans comme des bons musulmans »
+                           <div>
+                              <infos>
                                  
-                              </blockquote>
-                              
-                              <p>À titre de comparaison, Henry de Lesquen, l' ex patron de Radio Courtoisie raciste, antisémite et opposé à l'état de droit
-                                 n'a été condamné qu'une fois pour ce délit.
-                              </p>
-                              
-                              <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
-                              
-                           </infos>
+                                 <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour
+                                    provocation à la haine, en ayant tenu, entre autres, les propos suivants sur le service public :
+                                 </p>
+                                 
+                                 <blockquote>
+                                    « Les soldats du djihad sont considérés par tous les musulmans comme des bons musulmans »
+                                    
+                                 </blockquote>
+                                 
+                                 <p>À titre de comparaison, Henry de Lesquen, l' ex patron de Radio Courtoisie raciste, antisémite et opposé à l'état de droit
+                                    n'a été condamné qu'une fois pour ce délit.
+                                 </p>
+                                 
+                                 <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -753,7 +786,7 @@ label img {
                <h1>Ont-ils vraiment osé ?</h1>
                <p><em>Ils osent (presque) tout, c'est à ça qu'on les reconnaît. Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux
                      titre de presse.</em></p>
-               <div class="progress">
+               <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="10" style="width: 40%;"><span><strong>1 / 10</strong></span></div>
                </div>
                <div class="question" id="d1e527" data-pos="1" data-count="10">
@@ -778,13 +811,15 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc
-                              à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine. 
-                              
-                              <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg"></a>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc
+                                 à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine.
+                                 
+                                 <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg"></a>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -810,13 +845,15 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
-                              
-                              <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg"></a>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
+                                 
+                                 <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg"></a>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -840,9 +877,11 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -868,10 +907,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -897,10 +938,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <a href="http://tempsreel.nouvelobs.com/signatures/le-coup-de-sang-de-serge-raffy/20120316.OBS3929/melenchon-piege-a-c.html"><img src="images/piege_a_cons.png"></a>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <a href="http://tempsreel.nouvelobs.com/signatures/le-coup-de-sang-de-serge-raffy/20120316.OBS3929/melenchon-piege-a-c.html"><img src="images/piege_a_cons.png"></a>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -926,13 +969,15 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>Il s'agit du titre d'un article du Point</p>
-                              
-                              <a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png"></a>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>Il s'agit du titre d'un article du Point</p>
+                                 
+                                 <a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png"></a>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -958,10 +1003,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <a href="https://opiam.fr/2017/05/06/libetorchon0505/" target="_blank"><img src="http://md0.libe.com/api/libe/v2/paperpage/241881/?format=jpg&amp;size=x500"></a>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <a href="https://opiam.fr/2017/05/06/libetorchon0505/" target="_blank"><img src="http://md0.libe.com/api/libe/v2/paperpage/241881/?format=jpg&amp;size=x500"></a>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -987,13 +1034,15 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>Il s'agit du titre d'un "&gt;éditorial de Bruno Roger-Petit pour Challenges</p>
-                              
-                              <a href="https://www.challenges.fr/politique/melenchon-ruffin-et-les-sans-cravates-une-menace-a-prendre-au-serieux_483514"><img src="images/sans-cravate.png"></a>.
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>Il s'agit du titre d'un "&gt;éditorial de Bruno Roger-Petit pour Challenges</p>
+                                 
+                                 <a href="https://www.challenges.fr/politique/melenchon-ruffin-et-les-sans-cravates-une-menace-a-prendre-au-serieux_483514"><img src="images/sans-cravate.png"></a>.
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -1019,12 +1068,14 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              
-                              <p>C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a></p>
-                              <img src="images/manipule.jpg">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 
+                                 <p>C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a></p>
+                                 <img src="images/manipule.jpg">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -1050,14 +1101,16 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              C'était le titre d'un article de BFM TV. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale
-                              a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant
-                              une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis
-                              fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé
-                              à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 C'était le titre d'un article de BFM TV. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale
+                                 a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant
+                                 une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis
+                                 fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé
+                                 à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -1065,7 +1118,7 @@ label img {
             <section class="section" id="d1e749">
                <h1>Qui a dit...</h1>
                <p><em>Pour chacune des phrases suivantes, devinez qui l'a prononcée ou écrite !</em></p>
-               <div class="progress">
+               <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 100%;"><span><strong>1 / 5</strong></span></div>
                </div>
                <div class="question" id="d1e759" data-pos="1" data-count="5">
@@ -1092,10 +1145,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png"></a>
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png"></a>
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -1120,7 +1175,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e801" data-pos="3" data-count="5">
@@ -1145,10 +1202,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <img src="images/cretine.jpg">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <img src="images/cretine.jpg">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
@@ -1173,7 +1232,9 @@ label img {
                               </ul>
                            </div>
                         </div>
-                        <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                        <div class="infos">
+                           <div></div>
+                        </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
                <div class="question" id="d1e842" data-pos="5" data-count="5">
@@ -1201,10 +1262,12 @@ label img {
                            </div>
                         </div>
                         <div class="infos">
-                           <infos>
-                              <img src="images/mathiot.png">
-                              
-                           </infos>
+                           <div>
+                              <infos>
+                                 <img src="images/mathiot.png">
+                                 
+                              </infos>
+                           </div>
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
