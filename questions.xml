@@ -44,6 +44,9 @@
                 <reponse><img src="images/an3.jpg" height="175" /></reponse>
                 <reponse><img src="images/an4.jpg" height="175" /></reponse>
             </reponses>
+            <infos>
+                <img src="images/cravates.png" />
+            </infos>
         </question>
         <question>
             <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
