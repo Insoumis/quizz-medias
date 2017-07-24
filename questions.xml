@@ -35,6 +35,9 @@
                 <reponse><img src="images/choix3.png" height="175" /></reponse>
                 <reponse><img src="images/choix4.png" height="175" /></reponse>
             </reponses>
+            <infos>
+                <img srch="images/cqfr.jpg" />
+            </infos>
         </question>
         <question>
             <titre>Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
