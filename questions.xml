@@ -111,7 +111,6 @@
                 <reponse>Inacceptable</reponse>
             </reponses>
         </question>
-        <infos><div></div></infos>
     </questions>
 </section>
 
@@ -189,9 +188,6 @@
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
-            <infos><div>
-
-            </div></infos>
         </question>
         <question>
             <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
@@ -270,8 +266,6 @@
                 <reponse></reponse>
                 <reponse></reponse>
             </reponses>
-            <infos><div>
-            </div></infos>
         </question>
 
         <question>
