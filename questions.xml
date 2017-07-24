@@ -1,7 +1,214 @@
 <sections>
+
+<section>
+    <titre>Le choix de la rédaction</titre>
+    <desc>Pour chacune des questions suivantes, retrouvez le choix du journaliste</desc>
+
+    <questions>
+        <question>
+            <titre>« Éric Naulleau, à <em>On n'est pas couché</em>, à propos de Mélenchon : "Son modèle économique c'est ... »</titre>
+            <reponses>
+                <reponse>L'URSS des années 50</reponse>
+                <reponse correct="1">Le Vénézuela de Chavez</reponse>
+                <reponse>La Grèce de Tsipras</reponse>
+                <reponse>La Chine de Mao</reponse>
+                <reponse>L'écosocialisme</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Alexandre Poplavsky dans l'Est Républicain le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à chacune de ses sorties"</titre>
+            <reponses>
+                <reponse>prépare soigneusement</reponse>
+                <reponse>profère religieusement</reponse>
+                <reponse>hurle</reponse>
+                <reponse correct="1">gerbe</reponse>
+            </reponses>
+            <infos>
+                <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".</p>
+            </infos>
+        </question>
+        <question>
+            <titre>Dans son article pour <em>Europe 1</em> intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image le journaliste a-t-il voulu que le lecteur retienne ?</titre>
+            <reponses>
+                <reponse correct="1"><img src="images/choix1.jpg" height="175" /></reponse>
+                <reponse><img src="images/choix2.png" height="175" /></reponse>
+                <reponse><img src="images/choix3.png" height="175" /></reponse>
+                <reponse><img src="images/choix4.png" height="175" /></reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
+            <reponses>
+                <reponse><img src="images/an1.jpg" height="175" /></reponse>
+                <reponse correct="1"><img src="images/an2.jpg" height="175" /></reponse>
+                <reponse><img src="images/an3.jpg" height="175" /></reponse>
+                <reponse><img src="images/an4.jpg" height="175" /></reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
+            <reponses>
+                <reponse correct="1"><img src="images/prado1.png" height="175" /></reponse>
+                <reponse><img src="images/prado2.png" height="175" /></reponse>
+            </reponses>
+            <infos>
+                <img src="images/retenir.png" />
+            </infos>
+        </question>
+        <question>
+            <titre>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste, écologiste) sont :</titre>
+            <reponses>
+                <reponse correct="1">jumeaux</reponse>
+                <reponse correct="1">mariés</reponse>
+                <reponse correct="1">en couple</reponse>
+                <reponse>épris</reponse>
+                <reponse correct="1">unis</reponse>
+                <reponse correct="1">en tandem</reponse>
+                <reponse correct="1">main dans la main</reponse>
+            </reponses>
+            <infos>
+                <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, <em>Huffington Post</em></p>
+                <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
+                <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, <em>Libération</em>.</p>
+                <p>« Parole de candidats décolle avec le tandem Le Pen-Mélenchon ». 6 mars 2012, Emmanuel Berretta, <em>Le Point</em>.</p>
+                <p>« Aujourd’hui franchement si vous regardez par exemple, il y a quelque chose d’intéressant c’est que, sur la Russie, Marine Le Pen et Jean-Luc Mélenchon marchent main dans la main. ». Piotr Smolar, 9 mai 2014, dans <em>Arrêt sur images</em>.</p>
+                <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !</p>
+            </infos>
+        </question>
+        <question>
+            <titre>Pour <em>Libération</em>, critiquer les journalistes, est-ce acceptable ?</titre>
+            <reponses>
+                <reponse>Acceptable</reponse>
+                <reponse correct="1">Inacceptable</reponse>
+            </reponses>
+            <infos>
+                « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu Écoiffier, <em>Libération</em>.
+            </infos>
+        </question>
+        <question>
+            <titre>Pour <em>Libération</em>, assimiler Mélenchon à Hitler, Le Pen, Staline, Dieudonné, est-ce acceptable ?</titre>
+            <reponses>
+                <reponse correct="1">Acceptable</reponse>
+                <reponse>Inacceptable</reponse>
+            </reponses>
+        </question>
+        <infos></infos>
+    </questions>
+</section>
+
+<section>
+    <titre>Le petit cercle des médias</titre>
+    <desc>Quelques questions sur le monde homogène et fermé des journalistes</desc>
+
+    <questions>
+        <question>
+            <titre>Quelle rédaction a écrit dans son journal : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
+            <reponses>
+                <reponse>La rédaction de Fakir</reponse>
+                <reponse>La rédaction de Politis</reponse>
+                <reponse>La rédaction de Bastamag</reponse>
+                <reponse>La rédaction de Télérama</reponse>
+                <reponse>La rédaction du Monde Diplomatique</reponse>
+                <reponse correct="1">La rédaction de Libération</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré quatre fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
+            <reponses>
+                <reponse>Toute la rédaction</reponse>
+                <reponse>Seulement deux</reponse>
+                <reponse>Seulement un</reponse>
+                <reponse correct="1">Zéro</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016 ?</titre>
+            <reponses>
+                <reponse>environ 300 000 euros</reponse>
+                <reponse>environ 3 000 000 euros</reponse>
+                <reponse correct="1">environ 30 000 000 euros</reponse>
+            </reponses>
+            <infos>
+                Plus exactement, Yann Barthès a gagné <a href="http://www.parismatch.com/People/Marion-Cotillard-Yann-Barthes-Les-salaires-mirobolants-des-stars-en-2016-1198160">27 millions d'euros</a> en 2016.
+            </infos>
+        </question>
+    </questions>
+</section>
+
+<section>
+    <titre>Le Front National, des journalistes, ou les deux ?</titre>
+    <desc></desc>
+    <questions>
+        <question>
+            <titre>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconque se sent fragile ou menacé » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+        </question>
+        <!--<question>
+            <titre>Qui a dit : « Marine Le Pen, c'est notre star » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+        </question>-->
+        <question>
+            <titre>Qui a dit : « La rébellion ne se niche plus dans le vote rouge mais bleu marine » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+            <infos>
+                
+            </infos>
+        </question>
+        <question>
+            <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
+            <reponses>
+                <reponse>Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse correct="1">Les deux</reponse>
+            </reponses>
+        </question>
+        <question>
+            <titre>Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
+            <reponses>
+                <reponse correct="1">Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse>Les deux</reponse>
+            </reponses>
+            <infos>
+                <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".</p>
+
+                <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228" />
+            </infos>
+        </question>
+        <question>
+            <titre>Qui a été condamné pour provocation à la haine ?</titre>
+            <reponses>
+                <reponse>Des journalistes</reponse>
+                <reponse>Le Front National</reponse>
+                <reponse correct="1">Les deux</reponse>
+            </reponses>
+            <infos>
+                <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour provocation à la haine, en ayant tenu, entre autres, les propos suivants sur le service public :</p>
+                <blockquote>
+                    « Les soldats du djihad sont considérés par tous les musulmans comme des bons musulmans »
+                </blockquote>
+                <p>À titre de comparaison, Henry de Lesquen, l' ex patron de Radio Courtoisie raciste, antisémite et opposé à l'état de droit n'a été condamné qu'une fois pour ce délit.</p>
+                <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
+            </infos>
+        </question>
+    </questions>
+</section>
+
 <section>
     <titre>Ont-ils vraiment osé ?</titre>
-    <desc>Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux titre de presse.</desc>
+    <desc>Ils osent (presque) tout, c'est à ça qu'on les reconnaît. Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux titre de presse.</desc>
 
     <questions>
         <question>
@@ -27,6 +234,16 @@
                 <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
 
                 <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
+            </infos>
+        </question>
+
+        <question>
+            <titre></titre>
+            <reponses>
+                <reponse></reponse>
+                <reponse></reponse>
+            </reponses>
+            <infos>
             </infos>
         </question>
 
@@ -164,210 +381,5 @@
 
 « L’équipe de Libé est pour l’heure l’honneur de la profession. » ( Autre blague d’un journaliste de Libération, 27 avril 2014)
 -->
-</section>
-<section>
-    <titre>Le petit cercle des médias</titre>
-    <desc>Quelques questions sur le monde homogène et fermé des journalistes</desc>
-
-    <questions>
-        <question>
-            <titre>Quelle rédaction a écrit dans son journal : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
-            <reponses>
-                <reponse>La rédaction de Fakir</reponse>
-                <reponse>La rédaction de Politis</reponse>
-                <reponse>La rédaction de Bastamag</reponse>
-                <reponse>La rédaction de Télérama</reponse>
-                <reponse>La rédaction du Monde Diplomatique</reponse>
-                <reponse correct="1">La rédaction de Libération</reponse>
-            </reponses>
-        </question>
-        <question>
-            <titre>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré quatre fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
-            <reponses>
-                <reponse>Toute la rédaction</reponse>
-                <reponse>Seulement deux</reponse>
-                <reponse>Seulement un</reponse>
-                <reponse correct="1">Zéro</reponse>
-            </reponses>
-        </question>
-        <question>
-            <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016 ?</titre>
-            <reponses>
-                <reponse>environ 300 000 euros</reponse>
-                <reponse>environ 3 000 000 euros</reponse>
-                <reponse correct="1">environ 30 000 000 euros</reponse>
-            </reponses>
-            <infos>
-                Plus exactement, Yann Barthès a gagné <a href="http://www.parismatch.com/People/Marion-Cotillard-Yann-Barthes-Les-salaires-mirobolants-des-stars-en-2016-1198160">27 millions d'euros</a> en 2016.
-            </infos>
-        </question>
-    </questions>
-</section>
-
-<section>
-    <titre>Le Front National, des journalistes, ou les deux ?</titre>
-    <desc></desc>
-    <questions>
-        <question>
-            <titre>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconque se sent fragile ou menacé » ?</titre>
-            <reponses>
-                <reponse correct="1">Des journalistes</reponse>
-                <reponse>Le Front National</reponse>
-                <reponse>Les deux</reponse>
-            </reponses>
-        </question>
-        <!--<question>
-            <titre>Qui a dit : « Marine Le Pen, c'est notre star » ?</titre>
-            <reponses>
-                <reponse correct="1">Des journalistes</reponse>
-                <reponse>Le Front National</reponse>
-                <reponse>Les deux</reponse>
-            </reponses>
-        </question>-->
-        <question>
-            <titre>Qui a dit : « La rébellion ne se niche plus dans le vote rouge mais bleu marine » ?</titre>
-            <reponses>
-                <reponse correct="1">Des journalistes</reponse>
-                <reponse>Le Front National</reponse>
-                <reponse>Les deux</reponse>
-            </reponses>
-            <infos>
-                
-            </infos>
-        </question>
-        <question>
-            <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
-            <reponses>
-                <reponse>Des journalistes</reponse>
-                <reponse>Le Front National</reponse>
-                <reponse correct="1">Les deux</reponse>
-            </reponses>
-        </question>
-        <question>
-            <titre>Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
-            <reponses>
-                <reponse correct="1">Des journalistes</reponse>
-                <reponse>Le Front National</reponse>
-                <reponse>Les deux</reponse>
-            </reponses>
-            <infos>
-                <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".</p>
-
-                <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228" />
-            </infos>
-        </question>
-        <question>
-            <titre>Qui a été condamné pour provocation à la haine ?</titre>
-            <reponses>
-                <reponse>Des journalistes</reponse>
-                <reponse>Le Front National</reponse>
-                <reponse correct="1">Les deux</reponse>
-            </reponses>
-            <infos>
-                <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour provocation à la haine, en ayant tenu, entre autres, les propos suivants sur le service public :</p>
-                <blockquote>
-                    « Les soldats du djihad sont considérés par tous les musulmans comme des bons musulmans »
-                </blockquote>
-                <p>À titre de comparaison, Henry de Lesquen, l' ex patron de Radio Courtoisie raciste, antisémite et opposé à l'état de droit n'a été condamné qu'une fois pour ce délit.</p>
-                <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
-            </infos>
-        </question>
-    </questions>
-</section>
-
-<section>
-    <titre>Le choix de la rédaction</titre>
-    <desc>Pour chacune des questions suivantes, retrouvez le choix du journaliste</desc>
-
-    <questions>
-        <question>
-            <titre>« Éric Naulleau, à <em>On n'est pas couché</em>, à propos de Mélenchon : "Son modèle économique c'est ... »</titre>
-            <reponses>
-                <reponse>L'URSS des années 50</reponse>
-                <reponse correct="1">Le Vénézuela de Chavez</reponse>
-                <reponse>La Grèce de Tsipras</reponse>
-                <reponse>La Chine de Mao</reponse>
-                <reponse>L'écosocialisme</reponse>
-            </reponses>
-        </question>
-        <question>
-            <titre>Alexandre Poplavsky dans l'Est Républicain le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à chacune de ses sorties"</titre>
-            <reponses>
-                <reponse>prépare soigneusement</reponse>
-                <reponse>profère religieusement</reponse>
-                <reponse>hurle</reponse>
-                <reponse correct="1">gerbe</reponse>
-            </reponses>
-            <infos>
-                <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".</p>
-            </infos>
-        </question>
-        <question>
-            <titre>Dans son article pour <em>Europe 1</em> intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image le journaliste a-t-il voulu que le lecteur retienne ?</titre>
-            <reponses>
-                <reponse correct="1"><img src="images/choix1.jpg" height="175" /></reponse>
-                <reponse><img src="images/choix2.png" height="175" /></reponse>
-                <reponse><img src="images/choix3.png" height="175" /></reponse>
-                <reponse><img src="images/choix4.png" height="175" /></reponse>
-            </reponses>
-        </question>
-        <question>
-            <titre>Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
-            <reponses>
-                <reponse><img src="images/an1.jpg" height="175" /></reponse>
-                <reponse correct="1"><img src="images/an2.jpg" height="175" /></reponse>
-                <reponse><img src="images/an3.jpg" height="175" /></reponse>
-                <reponse><img src="images/an4.jpg" height="175" /></reponse>
-            </reponses>
-        </question>
-        <question>
-            <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
-            <reponses>
-                <reponse correct="1"><img src="images/prado1.png" height="175" /></reponse>
-                <reponse><img src="images/prado2.png" height="175" /></reponse>
-            </reponses>
-            <infos>
-                <img src="images/retenir.png" />
-            </infos>
-        </question>
-        <question>
-            <titre>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste, écologiste) sont :</titre>
-            <reponses>
-                <reponse correct="1">jumeaux</reponse>
-                <reponse correct="1">mariés</reponse>
-                <reponse correct="1">en couple</reponse>
-                <reponse>épris</reponse>
-                <reponse correct="1">unis</reponse>
-                <reponse correct="1">en tandem</reponse>
-                <reponse correct="1">main dans la main</reponse>
-            </reponses>
-            <infos>
-                <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, <em>Huffington Post</em></p>
-                <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
-                <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, <em>Libération</em>.</p>
-                <p>« Parole de candidats décolle avec le tandem Le Pen-Mélenchon ». 6 mars 2012, Emmanuel Berretta, <em>Le Point</em>.</p>
-                <p>« Aujourd’hui franchement si vous regardez par exemple, il y a quelque chose d’intéressant c’est que, sur la Russie, Marine Le Pen et Jean-Luc Mélenchon marchent main dans la main. ». Piotr Smolar, 9 mai 2014, dans <em>Arrêt sur images</em>.</p>
-                <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !</p>
-            </infos>
-        </question>
-        <question>
-            <titre>Pour <em>Libération</em>, critiquer les journalistes, est-ce acceptable ?</titre>
-            <reponses>
-                <reponse>Acceptable</reponse>
-                <reponse correct="1">Inacceptable</reponse>
-            </reponses>
-            <infos>
-                « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu Écoiffier, <em>Libération</em>.
-            </infos>
-        </question>
-        <question>
-            <titre>Pour <em>Libération</em>, assimiler Mélenchon à Hitler, Le Pen, Staline, Dieudonné, est-ce acceptable ?</titre>
-            <reponses>
-                <reponse correct="1">Acceptable</reponse>
-                <reponse>Inacceptable</reponse>
-            </reponses>
-        </question>
-        <infos></infos>
-    </questions>
 </section>
 </sections>
