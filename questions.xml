@@ -259,6 +259,17 @@
         </question>
 
         <question>
+            <titre>« Mélenchon, piège à c... »</titre>
+            <reponses>
+                <reponse correct="1">Vrai titre</reponse>
+                <reponse>Faux titre</reponse>
+            </reponses>
+            <infos>
+                <a href="http://tempsreel.nouvelobs.com/signatures/le-coup-de-sang-de-serge-raffy/20120316.OBS3929/melenchon-piege-a-c.html"><img src="images/piege_a_cons.png" /></a>
+            </infos>
+        </question>
+
+        <question>
             <titre>« Comment Emmanuel Macron est devenu "leader du monde libre" »</titre>
             <reponses>
                 <reponse correct="1">Vrai titre</reponse>
