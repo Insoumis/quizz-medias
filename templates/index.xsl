@@ -22,22 +22,86 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 
     <style type="text/css">
-        body { padding-top: 70px; font-size: 1.8em; }
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-.question, .answer, .section, .incorrect, .correct, #score { display: none; }
+body {
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 1.8em;
+    padding-top: 100px;
+}
 
-.correct, .incorrect {  }
+h1 {
+    font-family: Montserrat, sans-serif;
+    margin-top: 60px;
+}
 
-label img { border: 1px solid black; }
-.answer img { max-width: 90%; }
+.navbar {
+    background: #c9462c;
+    border-bottom: 1px solid #bc4229;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8em;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    text-shadow: 0 1px 2px rgba(0,0,0, 0.4);
+    transition: .2s;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background: none;
+    border-bottom: 3px solid #fff;
+    box-shadow: none;
+}
 
 .progress {
+    height: 30px;
     position: relative;
 }
 
-label, input {
-    display: inline-block;
-    vertical-align: baseline;
+.progress span {
+    color: #004e65;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2em;
+    line-height: 30px;
+    position: absolute;
+    text-shadow: 0 1px 1px rgba(255,255,255, 0.6);
+    width: 100%;
+}
+
+.progress-bar-success {background: #33b9d3;}
+
+.subtitle {margin-bottom: 20px;}
+
+.sub-progress span {color: #560000;}
+
+.sub-progress .progress-bar {background: #d1270c;}
+
+.question {
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.12);
+    margin: 40px auto;
+    padding: 40px;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    margin: 0 0 30px;
 }
 
 form, input {
@@ -46,25 +110,66 @@ form, input {
     -webkit-box-sizing: border-box;
 }
 
+form {margin: 0; margin-left: 40px;}
+
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+}
 
 label {
-    padding-left: 0.5em;
     font-weight: normal;
+    line-height: 1.9em;
+    padding-left: 0.5em;
 }
 
-.btn-next, .btn-answer {
-}
-
-.progress span {
-    position: absolute;
+.btn-primary {
+    background: #33b9d3;
+    border: 0;
     display: block;
-    width: 100%;
-    color: black;
- }
-
-.btn-next-container {
-    margin-top: 2em;
+    margin: 35px auto 0;
+    padding: 6px 60px;
+    transition: .2s;
 }
+
+.btn-primary:hover {background: #1b90a7;}
+
+.answer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.glyphicon-ok {color: #33b9d3;}
+.glyphicon-remove {color: #d1270c;}
+
+.answer ul {
+    list-style: none;
+    margin: 10px 0 35px;
+    padding: 0;
+}
+
+.infos {
+    width: 50%;
+    margin: auto;
+}
+
+.infos p,
+.infos img {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.infos a {color: #33b9d3;}
+
+label img {
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.answer img { max-width: 90%; }
+
+.question, .answer, .section, .incorrect, .correct, #score { display: none; }
+
     </style>
   </head>
 
@@ -119,13 +224,13 @@ label {
                     <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
                   </div>
                 </div>
-    
+
                 <xsl:for-each select="./questions/question">
                     <xsl:variable name="input_type" select="if (count(reponses/reponse[@correct=1])  > 1) then 'checkbox' else 'radio'" />
 
                     <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
                         <h2><xsl:value-of select="./titre" /></h2>
-                        
+
                         <form>
                             <xsl:for-each select="./reponses/reponse">
                                 <div><input type="{$input_type}" autocomplete="off" data-correct="{./@correct}" name="{generate-id(../..)}" id="{generate-id(.)}" /> <label for="{generate-id(.)}"><xsl:copy-of select="node()" /></label></div>
@@ -136,28 +241,26 @@ label {
 
                         <div class="answer">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="correct">
-                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :) 
-                                    </div>
-                                    <div class="incorrect">
-                                        <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
-                                        <div>
-                                            <ul>
-                                            <xsl:for-each select="./reponses/reponse[@correct=1]">
-                                                <li><strong><xsl:copy-of select="node()" /></strong></li>
-                                                <!--<xsl:if test="position() != last()">, </xsl:if>-->
-                                            </xsl:for-each>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
+                                <div class="correct">
+                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                                 </div>
-                                <div class="col-sm-6 infos">
+                                <div class="incorrect">
+                                    <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
+                                    <div>
+                                        <ul>
+                                        <xsl:for-each select="./reponses/reponse[@correct=1]">
+                                            <li><strong><xsl:copy-of select="node()" /></strong></li>
+                                            <!--<xsl:if test="position() != last()">, </xsl:if>-->
+                                        </xsl:for-each>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="infos">
                                     <xsl:copy-of select="./infos" />
                                 </div>
+                                <button type="button" class="btn btn-primary btn-next">Question suivante</button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </xsl:for-each>
@@ -166,9 +269,9 @@ label {
     </div>
 
     <div id="score">
-            
+
     </div>
-      
+
 
     </div><!-- /.container -->
 
@@ -235,7 +338,7 @@ label {
                 }
             }
             else
-            {    
+            {
                 current_question = next_question;
                 $('#' + current_question).show();
             }
@@ -271,7 +374,7 @@ label {
             $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
             $('#' + current_question).show();
-            
+
         });
     </script>
   </body>
