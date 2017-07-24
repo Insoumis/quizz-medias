@@ -333,13 +333,13 @@
         <question>
             <titre>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste, écologiste) sont :</titre>
             <reponses>
-                <reponse>jumeaux</reponse>
-                <reponse>mariés</reponse>
-                <reponse>en couple</reponse>
-                <reponse>unis</reponse>
-                <reponse>en tandem</reponse>
-                <reponse>main dans la main</reponse>
-                <reponse correct="1">tout ça à la fois</reponse>
+                <reponse correct="1">jumeaux</reponse>
+                <reponse correct="1">mariés</reponse>
+                <reponse correct="1">en couple</reponse>
+                <reponse>épris</reponse>
+                <reponse correct="1">unis</reponse>
+                <reponse correct="1">en tandem</reponse>
+                <reponse correct="1">main dans la main</reponse>
             </reponses>
             <infos>
                 <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, <em>Huffington Post</em></p>

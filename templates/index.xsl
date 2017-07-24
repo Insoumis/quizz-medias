@@ -121,12 +121,14 @@ label {
                 </div>
     
                 <xsl:for-each select="./questions/question">
+                    <xsl:variable name="input_type" select="if (count(reponses/reponse[@correct=1])  > 1) then 'checkbox' else 'radio'" />
+
                     <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
                         <h2><xsl:value-of select="./titre" /></h2>
                         
                         <form>
                             <xsl:for-each select="./reponses/reponse">
-                                <div><input type="radio" autocomplete="off" data-correct="{./@correct}" name="{generate-id(../..)}" id="{generate-id(.)}" /> <label for="{generate-id(.)}"><xsl:copy-of select="node()" /></label></div>
+                                <div><input type="{$input_type}" autocomplete="off" data-correct="{./@correct}" name="{generate-id(../..)}" id="{generate-id(.)}" /> <label for="{generate-id(.)}"><xsl:copy-of select="node()" /></label></div>
                             </xsl:for-each>
 
                             <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
@@ -141,11 +143,12 @@ label {
                                     <div class="incorrect">
                                         <div><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Mauvaise réponse :( La bonne réponse était :</div>
                                         <div>
-                                            <xsl:for-each select="./reponses/reponse">
-                                            <xsl:if test="./@correct = 1">
-                                                <strong><xsl:copy-of select="node()" /></strong>
-                                            </xsl:if>
+                                            <ul>
+                                            <xsl:for-each select="./reponses/reponse[@correct=1]">
+                                                <li><strong><xsl:copy-of select="node()" /></strong></li>
+                                                <!--<xsl:if test="position() != last()">, </xsl:if>-->
                                             </xsl:for-each>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="btn-next-container"><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
@@ -244,7 +247,13 @@ label {
 
         function answerCurrentQuestion()
         {
-            var correct = $('#' + current_question + ' input[type=radio]:checked').data('correct') == "1";
+            var correct = $('#' + current_question + ' input:checked').length == $('#' + current_question + ' input[data-correct=1]').length;
+
+            $('#' + current_question + ' input[data-correct=1]').each(function(i) {
+                correct = correct &amp;&amp; $(this).is(':checked');
+            });
+
+
             completed++;
             if (correct)
                 points++;
