@@ -82,6 +82,18 @@
             </infos>
         </question>
         <question>
+            <titre>On peut dire que Jean-Luc Mélenchon...</titre>
+            <reponses>
+                <reponse correct="1">capitalise</reponse>
+                <reponse correct="1">profite</reponse>
+                <reponse correct="1">parie</reponse>
+            </reponses>
+            <infos>
+                <p>Primaire de la gauche : Mélenchon parie sur un désistement du vainqueur. 22 janvier 2017, <em>Le Point</em>.</p>
+                <p>Primaire de la gauche : Mélenchon parie sur un désistement du vainqueur. 22 janvier 2017, <em>Le Point</em>.</p>
+            </infos>
+        </question>
+        <question>
             <titre>Pour <em>Libération</em>, critiquer les journalistes, est-ce acceptable ?</titre>
             <reponses>
                 <reponse>Acceptable</reponse>
@@ -138,17 +150,25 @@
                 Plus exactement, Yann Barthès a gagné <a href="http://www.parismatch.com/People/Marion-Cotillard-Yann-Barthes-Les-salaires-mirobolants-des-stars-en-2016-1198160">27 millions d'euros</a> en 2016.
             </infos>
         </question>
+        <question>
+            <titre>À qui l'"impertinent" et "rebelle" Yann Barthès (qui ne "sert la soupe à personne") a-t-il demandé s'il aimait "se faire passer la bite au cirage" ?
+            <reponses>
+                <reponse>Au Président François Hollande</reponse>
+                <reponse>Au Président Emmanuel Macron</reponse>
+                <reponse correct="1">À l'ouvrier Philippe Poutou</reponse>
+            </reponses>
+        </question>
     </questions>
 </section>
 
 <section>
-    <titre>Le Front National, des journalistes, ou les deux ?</titre>
+    <titre>Le Front National, un journaliste, ou les deux ?</titre>
     <desc></desc>
     <questions>
         <question>
             <titre>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconque se sent fragile ou menacé » ?</titre>
             <reponses>
-                <reponse correct="1">Des journalistes</reponse>
+                <reponse correct="1">Un journaliste</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
@@ -164,7 +184,7 @@
         <question>
             <titre>Qui a dit : « La rébellion ne se niche plus dans le vote rouge mais bleu marine » ?</titre>
             <reponses>
-                <reponse correct="1">Des journalistes</reponse>
+                <reponse correct="1">Un journaliste</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
@@ -175,7 +195,7 @@
         <question>
             <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
             <reponses>
-                <reponse>Des journalistes</reponse>
+                <reponse>Un journaliste</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse correct="1">Les deux</reponse>
             </reponses>
@@ -183,7 +203,7 @@
         <question>
             <titre>Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
             <reponses>
-                <reponse correct="1">Des journalistes</reponse>
+                <reponse correct="1">Un journaliste</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
@@ -196,7 +216,7 @@
         <question>
             <titre>Qui a été condamné pour provocation à la haine ?</titre>
             <reponses>
-                <reponse>Des journalistes</reponse>
+                <reponse>Un journaliste</reponse>
                 <reponse>Le Front National</reponse>
                 <reponse correct="1">Les deux</reponse>
             </reponses>
