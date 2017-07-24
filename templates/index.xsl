@@ -144,20 +144,20 @@ label {
 
 .answer ul {
     list-style: none;
-    margin: 10px 0 35px;
+    margin: 10px 0;
     padding: 0;
 }
 
 .infos {
-    background: #f5f5f5;
     width: 50%;
     margin: auto;
 }
 
-.infos > div {
+.infos div {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 4px;
+    margin-top: 35px;
 }
 
 .infos a {color: #33b9d3;}
