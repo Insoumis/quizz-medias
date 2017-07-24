@@ -36,7 +36,7 @@
                 <reponse><img src="images/choix4.png" height="175" /></reponse>
             </reponses>
             <infos>
-                <img srch="images/cqfr.jpg" />
+                <img src="images/cqfr.jpg" />
             </infos>
         </question>
         <question>
@@ -190,7 +190,7 @@
                 <reponse>Les deux</reponse>
             </reponses>
             <infos>
-                
+
             </infos>
         </question>
         <question>
@@ -245,7 +245,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos>
-                Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine. 
+                Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine.
 
                 <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg" /></a>
             </infos>

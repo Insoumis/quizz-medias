@@ -153,8 +153,7 @@ label {
     margin: auto;
 }
 
-.infos p,
-.infos img {
+.infos > div {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 4px;
@@ -218,7 +217,7 @@ label img {
 
                 <p><em><xsl:value-of select="./desc" /></em></p>
 
-                <div class="progress">
+                <div class="progress sub-progress">
                   <xsl:variable name="pourcentage" select="100 * position() div $nombre_questions" />
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="{$nombre_questions}" style="width: {$pourcentage}%;" >
                     <span><strong>1 / <xsl:value-of select="count(questions/question)" /></strong></span>
@@ -256,7 +255,9 @@ label img {
                                     </div>
                                 </div>
                                 <div class="infos">
-                                    <xsl:copy-of select="./infos" />
+                                    <div>
+                                        <xsl:copy-of select="./infos" />
+                                    </div>
                                 </div>
                                 <button type="button" class="btn btn-primary btn-next">Question suivante</button>
                             </div>
