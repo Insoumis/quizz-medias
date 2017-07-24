@@ -149,6 +149,7 @@ label {
 }
 
 .infos {
+    background: #f5f5f5;
     width: 50%;
     margin: auto;
 }
@@ -255,9 +256,7 @@ label img {
                                     </div>
                                 </div>
                                 <div class="infos">
-                                    <div>
-                                        <xsl:copy-of select="./infos" />
-                                    </div>
+                                    <xsl:copy-of select="./infos" />
                                 </div>
                                 <button type="button" class="btn btn-primary btn-next">Question suivante</button>
                             </div>

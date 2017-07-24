@@ -23,9 +23,9 @@
                 <reponse>hurle</reponse>
                 <reponse correct="1">gerbe</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>Lire en effet cet article de l'OPIAM : "<a href="https://opiam.fr/2013/12/14/un-journaliste-eructe-et-gerbe-sur-melenchon/">Selon trente trois journalistes, Mélenchon « éructe », « vomit », « gerbe », « aboie » et devrait « fermer sa gueule »</a>".</p>
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Dans son article pour <em>Europe 1</em> intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à <em>Des Paroles et Des Actes</em>", quelle image le journaliste a-t-il voulu que le lecteur retienne ?</titre>
@@ -35,9 +35,9 @@
                 <reponse><img src="images/choix3.png" height="175" /></reponse>
                 <reponse><img src="images/choix4.png" height="175" /></reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <img src="images/cqfr.jpg" />
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon <em>Le Point</em>, <em>Europe 1</em>, <em>Libération</em> ?</titre>
@@ -47,9 +47,9 @@
                 <reponse><img src="images/an3.jpg" height="175" /></reponse>
                 <reponse><img src="images/an4.jpg" height="175" /></reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <img src="images/cravates.png" />
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon <em>Le Parisien</em>, dans son article intitulé "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?</titre>
@@ -57,9 +57,9 @@
                 <reponse correct="1"><img src="images/prado1.png" height="175" /></reponse>
                 <reponse><img src="images/prado2.png" height="175" /></reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <img src="images/retenir.png" />
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste, écologiste) sont :</titre>
@@ -72,14 +72,14 @@
                 <reponse correct="1">en tandem</reponse>
                 <reponse correct="1">main dans la main</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>« Jean-Luc Mélenchon et Marine Le Pen unis pour saluer la crise politique en Grèce ». 28 décembre 2014, Alexandre Boudet, <em>Huffington Post</em></p>
                 <p>« Marine Le Pen et Jean-Luc Mélenchon, les jumeaux de l’absentéisme ». 5 février 2014, Béatrice Houchard, <em>L'Opinion</em></p>
                 <p>« Les mariés de l’an 2012 » (titre), « couple de l’année », en référence à Mélenchon et Le Pen. 30 décembre 2012, Mathieu Lindon, <em>Libération</em>.</p>
                 <p>« Parole de candidats décolle avec le tandem Le Pen-Mélenchon ». 6 mars 2012, Emmanuel Berretta, <em>Le Point</em>.</p>
                 <p>« Aujourd’hui franchement si vous regardez par exemple, il y a quelque chose d’intéressant c’est que, sur la Russie, Marine Le Pen et Jean-Luc Mélenchon marchent main dans la main. ». Piotr Smolar, 9 mai 2014, dans <em>Arrêt sur images</em>.</p>
                 <p>...Et bien d'autres exemples sur le site de l'<a href="https://opiam.fr/2015/01/06/la-journaliste-wagnerienne-beatrice-houchard-demande-a-quand-un-meeting-le-pen-melenchon/">OPIAM</a> !</p>
-            </infos>
+            </div></infos>
         </question>
 <!--
         <question>
@@ -89,10 +89,10 @@
                 <reponse correct="1">profite</reponse>
                 <reponse correct="1">parie</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>Primaire de la gauche : Mélenchon parie sur un désistement du vainqueur. 22 janvier 2017, <em>Le Point</em>.</p>
                 <p>Primaire de la gauche : Mélenchon parie sur un désistement du vainqueur. 22 janvier 2017, <em>Le Point</em>.</p>
-            </infos>
+            </div></infos>
         </question>-->
         <question>
             <titre>Pour <em>Libération</em>, critiquer les journalistes, est-ce acceptable ?</titre>
@@ -100,9 +100,9 @@
                 <reponse>Acceptable</reponse>
                 <reponse correct="1">Inacceptable</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 « Que [Jean-Luc Mélenchon] demande à ses militants de nous surveiller ou d’entraver notre traitement est inacceptable. » Matthieu Écoiffier, <em>Libération</em>.
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Pour <em>Libération</em>, assimiler Mélenchon à Hitler, Le Pen, Staline, Dieudonné, est-ce acceptable ?</titre>
@@ -111,7 +111,7 @@
                 <reponse>Inacceptable</reponse>
             </reponses>
         </question>
-        <infos></infos>
+        <infos><div></div></infos>
     </questions>
 </section>
 
@@ -147,9 +147,9 @@
                 <reponse>environ 3 000 000 euros</reponse>
                 <reponse correct="1">environ 30 000 000 euros</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 Plus exactement, Yann Barthès a gagné <a href="http://www.lepoint.fr/people/salaires-des-stars-francaises-capital-balance-les-chiffres-26-02-2017-2107596_2116.php">27 millions d'euros</a> en 2016.
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>À qui l'"impertinent" et "rebelle" Yann Barthès (qui ne "sert la soupe à personne") a-t-il demandé s'il aimait "se faire passer la bite au cirage" ?</titre>
@@ -189,9 +189,9 @@
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
-            <infos>
+            <infos><div>
 
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
@@ -208,11 +208,11 @@
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>C'est le journaliste et directeur éditorial au Monde Arnaud Leparmentier qui l'a <a href="http://opiam.fr/2015/09/17/appel/">écrit</a>, reprenant ainsi la thèse de l'extrême droite de l'"appel d'air".</p>
 
                 <img src="http://i2.wp.com/opiam.fr/wp-content/uploads/2015/09/appel.jpg?resize=768%2C228" />
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>Qui a été condamné pour provocation à la haine ?</titre>
@@ -221,14 +221,14 @@
                 <reponse>Le Front National</reponse>
                 <reponse correct="1">Les deux</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>Le journaliste Éric Zemmour, qui s'est fait connaître du grand public grâce à Laurent Ruquier, a été condamné trois fois pour provocation à la haine, en ayant tenu, entre autres, les propos suivants sur le service public :</p>
                 <blockquote>
                     « Les soldats du djihad sont considérés par tous les musulmans comme des bons musulmans »
                 </blockquote>
                 <p>À titre de comparaison, Henry de Lesquen, l' ex patron de Radio Courtoisie raciste, antisémite et opposé à l'état de droit n'a été condamné qu'une fois pour ce délit.</p>
                 <p>En parallèle, bien sûr, plusieurs membres du FN ont été condamnés pour incitation à la haine, comme Jean-Marie Le Pen.</p>
-            </infos>
+            </div></infos>
         </question>
     </questions>
 </section>
@@ -244,11 +244,11 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine.
 
                 <a href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg" /></a>
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -257,11 +257,11 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
 
                 <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -270,8 +270,8 @@
                 <reponse></reponse>
                 <reponse></reponse>
             </reponses>
-            <infos>
-            </infos>
+            <infos><div>
+            </div></infos>
         </question>
 
         <question>
@@ -280,9 +280,9 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -291,9 +291,9 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <a href="http://tempsreel.nouvelobs.com/signatures/le-coup-de-sang-de-serge-raffy/20120316.OBS3929/melenchon-piege-a-c.html"><img src="images/piege_a_cons.png" /></a>
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -302,11 +302,11 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>Il s'agit du titre d'un article du Point</p>
 
                 <a href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png" /></a>
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -315,9 +315,9 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <a href="https://opiam.fr/2017/05/06/libetorchon0505/" target="_blank"><img src="http://md0.libe.com/api/libe/v2/paperpage/241881/?format=jpg&amp;size=x500" /></a>
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -326,11 +326,11 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>Il s'agit du titre d'un ">éditorial de Bruno Roger-Petit pour Challenges</p>
 
                 <a href="https://www.challenges.fr/politique/melenchon-ruffin-et-les-sans-cravates-une-menace-a-prendre-au-serieux_483514"><img src="images/sans-cravate.png" /></a>.
-            </infos>
+            </div></infos>
         </question>
 
 <!--        <question>
@@ -339,9 +339,9 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 C'est le titre d'une <a href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170421.OBS8314/jean-luc-melenchon-un-mirage-dangereux.html">tribune d'Henri Weber</a> parue dans l'Obs à deux jours du premier tour de la Présidentielle.
-            </infos>
+            </div></infos>
         </question>-->
 
         <question>
@@ -350,10 +350,10 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <p>C'est le titre d'un <a href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a></p>
                 <img src="images/manipule.jpg" />
-            </infos>
+            </div></infos>
         </question>
 
         <question>
@@ -362,9 +362,9 @@
                 <reponse correct="1">Vrai titre</reponse>
                 <reponse>Faux titre</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 C'était le titre d'un article de BFM TV. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
-            </infos>
+            </div></infos>
         </question>
     </questions>
 </section>
@@ -380,9 +380,9 @@
                 <reponse correct="1">Libération</reponse>
                 <reponse>Valeurs Actuelles</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <a href="http://opiam.fr/2013/05/12/diabolisation-visuelle-de-melenchon-dans-les-medias/"><img src="images/rqc.png" /></a>
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>« Jean-Luc Mélenchon joue à saute-cadavre »</titre>
@@ -398,9 +398,9 @@
 <!--                <reponse>Jean-Marie Le Pen à une Femen</reponse>-->
                 <reponse>Jean-Luc Mélenchon à une journaliste</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <img src="images/cretine.jpg" />
-            </infos>
+            </div></infos>
         </question>
         <question>
             <titre>« […] le Conseil des ministres et la Commission sont noyautés par des haut-fonctionnaires allemands […] »</titre>
@@ -415,9 +415,9 @@
                 <reponse correct="1">Cédric Mathiot (journaliste à Libération)</reponse>
                 <reponse>Murielle Pénicaud (Ministre du travail)</reponse>
             </reponses>
-            <infos>
+            <infos><div>
                 <img src="images/mathiot.png" />
-            </infos>
+            </div></infos>
         </question>
     </questions>
 
