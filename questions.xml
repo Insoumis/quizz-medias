@@ -105,11 +105,22 @@
             </div></infos>
         </question>
         <question>
-            <titre>Pour <em>Libération</em>, assimiler Mélenchon à Hitler, Le Pen, Staline, Dieudonné, est-ce acceptable ?</titre>
+            <titre>Pour <em>Libération</em>, assimiler Mélenchon à Hitler, Le Pen, Dieudonné, est-ce acceptable ?</titre>
             <reponses>
                 <reponse correct="1">Acceptable</reponse>
                 <reponse>Inacceptable</reponse>
             </reponses>
+            <infos>
+                <strong>Mélenchon = Hitler dans <em>Libération</em></strong>
+                <p>« La résistible ascension de Jean-Luc Mélenchon » (Alain Duhamel, <em>Libération</em>), référence à <em>La résistible ascension d’Arturo Ui</em>, pièce dans laquelle Arturo Ui représente Hitler.</p>
+                <p><img src="images/hitler.jpg" /><br /><span style="font-size: 75%;">En haut, une illustration dans <em>Libération</em>, mise en nuances de gris. En bas, les clichés d'Hoffmann.</span></p>
+                <strong>Mélenchon = Le Pen dans <em>Libération</em></strong>
+                <p>« Marine Le Pen aboiera, Jean-Luc Mélenchon éructera »
+« Marine Le Pen pavoisera, Jean-Luc Mélenchon s’enfiévrera » (Alain Duhamel, <em>Libération</em>)</p>
+                <strong>Mélenchon = Dieudonné dans <em>Libération</em></strong>
+                <p>À propos de Mélenchon, Stéphane Guillon écrivit dans <em>Libération</em> : « On évoque le syndrome Dieudonné, cet ancien humoriste, aujourd’hui révisionniste, abonné désormais aux jeux de mots nauséabonds »
+</p>
+            </infos>
         </question>
     </questions>
 </section>
