@@ -162,7 +162,7 @@
             </div></infos>
         </question>
         <question>
-            <titre>À qui l'"impertinent" et "rebelle" Yann Barthès (qui ne "sert la soupe à personne") a-t-il demandé s'il aimait "se faire passer la bite au cirage" ?</titre>
+            <titre>À qui l'"impertinent" et "rebelle" Yann Barthès (qui ne "sert la soupe à personne") a-t-il demandé s'il aimait "se faire passer la bite au cirage" ? (<em>Le Petit Journal</em>, 28 mars 2012)</titre>
             <reponses>
                 <reponse>Au Président François Hollande</reponse>
                 <reponse>Au Président Emmanuel Macron</reponse>
@@ -395,6 +395,9 @@
                 <reponse>Le Monde</reponse>
                 <reponse correct="1">Mediapart</reponse>
             </reponses>
+            <infos>
+                <img src="images/cadavre.png" />
+            </infos>
         </question>
         <question>
             <titre>« Je vais vous traquer jusqu'au fond des chiottes, crétine »</titre>
