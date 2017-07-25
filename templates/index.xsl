@@ -153,7 +153,7 @@ label {
     margin: auto;
 }
 
-.infos div {
+.infos div, #score #comment {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 4px;
@@ -168,7 +168,14 @@ label img {
 }
 .answer img { max-width: 90%; }
 
-.question, .answer, .section, .incorrect, .correct, #score { display: none; }
+.question, .answer, .section, .incorrect, .correct, #score, #share { display: none; }
+
+#score {
+    padding-top: 50px;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+}
 
     </style>
   </head>
@@ -196,7 +203,7 @@ label img {
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="container">
       <!--<div>
         <h1>Quizz Médias</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br /> All you get is this text and a mostly barebones HTML document.</p>
@@ -269,9 +276,19 @@ label img {
     </div>
 
     <div id="score">
-
+     <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{count(//questions/question)}" style="width: 0px;" >
+        <span><strong>0 / 0 réponse correcte</strong></span>
+      </div>
+    </div>
+    <div id="comment">
+        
+    </div>
     </div>
 
+    <div id="share">
+        Score à partager (clic-droit, enregistrer l'image) :
+    </div>
 
     </div><!-- /.container -->
 
@@ -283,7 +300,8 @@ label img {
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
-
+    <script type="text/javascript" src="html2canvas.js">
+    </script>
     <script type="text/javascript">
         current_question = '<xsl:value-of select="generate-id((//questions/question)[1])" />';
         current_section = '';
@@ -293,8 +311,38 @@ label img {
 
         function displayScore()
         {
-            $("#score").text(points + " / " + completed);
+            html2canvas(document.getElementById("score"), {
+                onrendered: function(canvas) {
+                    document.getElementById("container").appendChild(canvas);
+                },
+            });
+
+            $('#score_status').hide();
+            var comment = "";
+
+            if(points/completed &lt; 0.25)
+            {
+                comment = "Bravo. Vous n'êtes pas tombé dans le piège démago-populiste de Mélenchon. Soyez tout de même prudent en effectuant régulièrement vos rappels de &lt;i&gt;Libération&lt;/i&gt;. Et n'oubliez pas : faites ce que vous voulez, mais votez Macron."; 
+            }
+            else if(points/completed &lt; 0.50)
+            {
+                comment = "Attention : vous semblez montrer des signes de \"&lt;a href=\"http://www.leparisien.fr/politique/melenchon-le-pen-la-tentation-populiste-21-04-2017-6872517.php\"&gt;tentation populiste&lt;/a&gt;\". Une petite cure de 7-9 de &lt;i&gt;France Inter&lt;/i&gt; tous les matins, et de &lt;i&gt;C à vous&lt;/i&gt; le soir, devrait vous apporter la dose quotidienne nécessaire de Patrick Cohen pour soigner votre \"cerveau malade\".";
+            }
+            else if(points/completed &lt; 0.75)
+            {
+                comment = "Vous semblez souffrir &lt;a href=\"http://www.lavoixdunord.fr/137322/article/2017-03-24/le-populisme-une-fievre-qui-s-installe\"&gt;d'une poussée de fièvre populiste&lt;/a&gt;. Peut-être une maladie endémique contractée lors d'une voyage au Vénézuela ? Vous avez besoin d'un environnement sain : éliminez tous les exemplaires de &lt;i&gt;Fakir&lt;/i&gt; ou du &lt;i&gt;Monde Diplomatique&lt;/i&gt; qui auraient pu trouver refuge dans votre maison. Prenez &lt;i&gt;Le Monde&lt;/i&gt; une fois par jour, et &lt;i&gt;l'Obs&lt;/i&gt; une fois par semaine.";
+            }
+            else
+            {
+                comment = "Vous ne voulez pas être manipulés par les médias : vous préférez être manipulés par votre \"gourou\" Mélenchon. Même un stage en centre de déradicalisation, en vue d'être \"traité\" par Nathalie Saint-Cricq en personne, ne pourrait vous sauver.";
+            }
+
+            $('#score .progress-bar span strong').text(points + ' / ' + completed + ' réponses correctes');
+            $('#score .progress-bar').css('width', 100*points/completed + '%');
+
+            $("#score #comment").html(comment);
             $("#score").show();
+            $("#share").show();
         }
 
         function displayAnswer(correct)
@@ -368,6 +416,7 @@ label img {
         }
 
         $( document ).ready(function() {
+            
             $('.btn-answer').click(answerCurrentQuestion);
             $('.btn-next').click(displayNextQuestion);
             current_section = $('#' + current_question).closest('section').attr('id');

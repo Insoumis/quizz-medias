@@ -2,7 +2,7 @@
 
 <section>
     <titre>Le choix de la rédaction</titre>
-    <desc>Pour chacune des questions suivantes, retrouvez le choix du journaliste</desc>
+    <desc>Pour chacune des questions suivantes, trouvez le choix du journaliste</desc>
 
     <questions>
         <question>
@@ -149,6 +149,9 @@
                 <reponse>Seulement un</reponse>
                 <reponse correct="1">Zéro</reponse>
             </reponses>
+            <infos>
+                Personne n'a moufté, en effet. Mais pour <em>Libération</em>, qui se taisent quand leurs confrères sont censurés, "l’entourage de Mélenchon « défend la stratégie du chef en file indienne »".
+            </infos>
         </question>
         <question>
             <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016 ?</titre>
