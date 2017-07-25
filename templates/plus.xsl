@@ -191,11 +191,11 @@ label img {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Quizz Médias</a>
+          <a class="navbar-brand" href="index.html">Quizz Médias</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Jouer</a></li>
+            <li><a href="index.html">Jouer</a></li>
             <li class="active"><a href="plus.html">Plus d'informations</a></li>
             <li><a href="mailto:rouslan.gauchet@gmail.com">Contact</a></li>
           </ul>
@@ -210,7 +210,8 @@ label img {
 
       <div class="about">
         <ul>
-            <li><a href="https://la-physis.fr/">Rouslan Gauchet</a> l'administrateur de l'<a href="https://opiam.fr/">OPIAM</a></li>
+            <li><a href="https://la-physis.fr/">Rouslan Gauchet</a></li>
+            <li>L'administrateur de l'<a href="https://opiam.fr/">OPIAM</a></li>
             <li>Snae</li>
             <li>FabLab</li>
         </ul>
