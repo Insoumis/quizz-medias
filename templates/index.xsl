@@ -9,12 +9,32 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta property="og:site_name" content="Jeux de l'été" />
+    <meta property="og:title" content="Jeux de l'été : êtes-vous dupe du Mélenchon-bashing ?" />
+    <meta property="og:url" content="http://la-physis.fr/jeu-medias/" />
+    <meta property="og:description" content="Avez-vous cédé à la tentation démago-populo-castriste anti-journaliste primaire de Mélenchon ? Dépistage gratuit !" />
+    <meta property="og:image" content="http://la-physis.fr/jeu-medias/images/preview.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-07-25T16:20:13+02:00" />
+    <meta property="article:tag" content="médias" />
+    <meta property="article:tag" content="OPIAM" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@lucasgautheron" />
+
     <link rel="icon" href="../../favicon.ico" />
 
-    <title>Quizz médias</title>
+    <title>Jeux de l'été : êtes-vous dupe du Mélenchon-bashing ?</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93713823-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
@@ -191,7 +211,6 @@ label img {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Quizz Médias</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -205,7 +224,7 @@ label img {
 
     <div class="container" id="container">
       <!--<div>
-        <h1>Quizz Médias</h1>
+        <h1>quiz Médias</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br /> All you get is this text and a mostly barebones HTML document.</p>
       </div>-->
       <div id="score_status">
@@ -330,7 +349,7 @@ label img {
             }
             else if(points/completed &lt; 0.75)
             {
-                comment = "Vous semblez souffrir &lt;a href=\"http://www.lavoixdunord.fr/137322/article/2017-03-24/le-populisme-une-fievre-qui-s-installe\"&gt;d'une poussée de fièvre populiste&lt;/a&gt;. Peut-être une maladie endémique contractée lors d'une voyage au Vénézuela ? Vous avez besoin d'un environnement sain : éliminez tous les exemplaires de &lt;i&gt;Fakir&lt;/i&gt; ou du &lt;i&gt;Monde Diplomatique&lt;/i&gt; qui auraient pu trouver refuge dans votre maison. Prenez &lt;i&gt;Le Monde&lt;/i&gt; une fois par jour, et &lt;i&gt;l'Obs&lt;/i&gt; une fois par semaine.";
+                comment = "Vous semblez souffrir &lt;a href=\"http://www.lavoixdunord.fr/137322/article/2017-03-24/le-populisme-une-fievre-qui-s-installe\"&gt;d'une poussée de fièvre populiste&lt;/a&gt;. Peut-être une maladie endémique contractée lors d'un voyage au Vénézuela ? Vous avez besoin d'un environnement sain : éliminez tous les exemplaires de &lt;i&gt;Fakir&lt;/i&gt; ou du &lt;i&gt;Monde Diplomatique&lt;/i&gt; qui auraient pu trouver refuge dans votre maison. Prenez &lt;i&gt;Le Monde&lt;/i&gt; une fois par jour, et &lt;i&gt;l'Obs&lt;/i&gt; une fois par semaine.";
             }
             else
             {
