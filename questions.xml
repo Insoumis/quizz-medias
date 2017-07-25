@@ -186,6 +186,9 @@
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
+            <infos>
+                C'est le journaliste Michel Richard, dans <em>Le Midi Libre</em> (10 mai 2015).
+            </infos>
         </question>
         <!--<question>
             <titre>Qui a dit : « Marine Le Pen, c'est notre star » ?</titre>
@@ -202,6 +205,9 @@
                 <reponse>Le Front National</reponse>
                 <reponse>Les deux</reponse>
             </reponses>
+            <infos>
+                C'est un <a href="http://abonnes.lemonde.fr/politique/article/2014/06/04/a-tergnier-on-vote-fn-pour-leur-faire-peur-la-haut_4431781_823448.html">journaliste dans Le Monde</a>.
+            </infos>
         </question>
         <question>
             <titre>Qui a employé l'expression « Français de fraîche date » ?</titre>
@@ -210,6 +216,11 @@
                 <reponse>Le Front National</reponse>
                 <reponse correct="1">Les deux</reponse>
             </reponses>
+            <infos>
+                <p>L'expression a été employée par la journaliste Christine Clerc (alors sur <em>Europe 1</em>) :</p>
+                <blockquote>Dans un article de 1986 publié dans Le Figaro Magazine ou à la télévision (les sources varient), elle reproche à Henri Krasucki [ndla: résistant juif polonais] d'être un « Français de fraîche date » et peut-être de se montrer ingrat envers sa nouvelle patrie.</blockquote>
+                <p>Elle a été également employée par Bruno Gollnisch contre Rihan Cypel (député PS d'origine brésilienne).</p>
+            </infos>
         </question>
         <question>
             <titre>Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle a dû rétablir les frontières » ?</titre>
@@ -225,7 +236,7 @@
             </div></infos>
         </question>
         <question>
-            <titre>Qui a été condamné pour provocation à la haine ?</titre>
+            <titre>Qui a été condamné plusieurs fois pour provocation à la haine ?</titre>
             <reponses>
                 <reponse>Un journaliste</reponse>
                 <reponse>Le Front National</reponse>
@@ -272,14 +283,6 @@
 
                 <a href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
             </div></infos>
-        </question>
-
-        <question>
-            <titre></titre>
-            <reponses>
-                <reponse></reponse>
-                <reponse></reponse>
-            </reponses>
         </question>
 
         <question>
