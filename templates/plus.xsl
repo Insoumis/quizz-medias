@@ -205,7 +205,7 @@ label img {
 
     <div class="container" id="container">
       <div class="about">
-        <p>Dénoncer la violence médiatique contre notre mouverment et les personnalités qui le représentent, ce n'est pas une "stratégie de victimisation" : c'est simplement faire le constat que la presse est de fait, pour nous, un adversaire politique. Cet intérêt pour les médias n'est donc pas de se présenter en martyrs du "système". Il s'agit plutôt de pointer les mécanismes qui font d'eux non pas le "quatrième pouvoir", mais bien la "deuxième peau du système", en nous empêchant de penser hors du cadre dans lequel nous évoluons. Ce petit jeu tente, sur la base de l'immense travail de l'<a href="https://opiam.fr/">OPIAM</a>, de faire réfléchir par l'humour aux prises de positions, injures et hypocrisies de cette presse qui ne veut pas s'admettre comme militante.</p>
+        <p>Dénoncer la violence médiatique contre notre mouverment et les personnalités qui le représentent, ce n'est pas une "stratégie de victimisation" : c'est simplement faire le constat que la presse est de fait, pour nous, un adversaire politique. Cet intérêt pour les médias n'est donc pas de se présenter en martyrs des journalistes. Il s'agit plutôt de pointer les mécanismes qui font d'eux non pas le "quatrième pouvoir", mais bien la "deuxième peau du système", en nous empêchant de penser hors du cadre dans lequel nous évoluons. Ce petit jeu tente, sur la base de l'immense travail de l'<a href="https://opiam.fr/">OPIAM</a>, de faire réfléchir par l'humour aux prises de positions, injures et hypocrisies de cette presse qui ne veut pas s'admettre comme militante.</p>
       </div>
 
       <div class="about">
