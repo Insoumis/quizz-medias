@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:site_name" content="Jeux de l'été" />
     <meta property="og:title" content="Jeux de l'été : êtes-vous dupe du Mélenchon-bashing ?" />
-    <meta property="og:url" content="http://la-physis.fr/jeu-medias/" />
+    <meta property="og:url" content="https://la-physis.fr/jeu-medias/" />
     <meta property="og:description" content="Jeu en 31 questions. Partagez votre score !" />
-    <meta property="og:image" content="http://la-physis.fr/jeu-medias/images/preview.jpg" />
+    <meta property="og:image" content="http://la-physis.fr/jeu-medias/images/preview.jpg?64545" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2017-07-25T16:20:13+02:00" />
     <meta property="article:tag" content="médias" />
