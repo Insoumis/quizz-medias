@@ -115,11 +115,11 @@ h1 {
 .question {
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,.12);
-    margin: 40px auto;
-    padding: 40px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-h2 {
+p.title {
     font-family: Montserrat, sans-serif;
     margin: 0 0 30px;
 }
@@ -135,6 +135,8 @@ form {margin: 0; margin-left: 40px;}
 label, input {
     display: inline-block;
     vertical-align: baseline;
+    padding: 0;
+    margin: 0;
 }
 
 label {
@@ -170,6 +172,7 @@ label {
 
 .infos {
     width: 50%;
+    min-width: 400px;
     margin: auto;
 }
 
@@ -191,8 +194,9 @@ label img {
 .question, .answer, .section, .incorrect, .correct, #score, #share { display: none; }
 
 #score {
+    width: 100%;
     padding-top: 50px;
-    width: 600px;
+    max-width: 600px;
     height: 300px;
     margin: auto;
 }
@@ -240,6 +244,7 @@ label img {
             <xsl:variable name="titre_section" select="./titre" />
             <xsl:variable name="nombre_questions" select="count(questions/question)" />
             <section class="section" id="{generate-id(.)}">
+                <a name="{generate-id(.)}"></a>
                 <h1><xsl:value-of select="$titre_section" /></h1>
 
                 <p><em><xsl:value-of select="./desc" /></em></p>
@@ -255,7 +260,8 @@ label img {
                     <xsl:variable name="input_type" select="if (count(reponses/reponse[@correct=1])  > 1) then 'checkbox' else 'radio'" />
 
                     <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
-                        <h2><xsl:value-of select="./titre" /></h2>
+                        <a name="{generate-id(.)}"></a>
+                        <p class="title"><xsl:value-of select="./titre" /></p>
 
                         <form>
                             <xsl:for-each select="./reponses/reponse">
@@ -266,6 +272,7 @@ label img {
                         </form>
 
                         <div class="answer">
+                            <a name="answer-{generate-id(.)}"></a>
                             <div class="row">
                                 <div class="correct">
                                     <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
@@ -319,8 +326,7 @@ label img {
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
-    <script type="text/javascript" src="html2canvas.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script type="text/javascript">
         current_question = '<xsl:value-of select="generate-id((//questions/question)[1])" />';
         current_section = '';
@@ -369,6 +375,7 @@ label img {
             $('#' + current_question + ' form').hide();
             $('#' + current_question + ' .answer').show();
             $('#' + current_question + ' .answer .' + (correct ? 'correct' : 'incorrect')).show();
+            location.href = "#answer-"+current_question;
         }
 
         function displayNextSection()
@@ -379,6 +386,7 @@ label img {
             {
                 $('#' + prev_section).hide();
                 $('#' + current_section).show();
+                location.href = "#"+current_section;
             }
         }
 
@@ -408,6 +416,7 @@ label img {
             {
                 current_question = next_question;
                 $('#' + current_question).show();
+                location.href = "#"+current_question;
             }
 
             var cq = $('#' + current_question);
@@ -422,7 +431,6 @@ label img {
             $('#' + current_question + ' input[data-correct=1]').each(function(i) {
                 correct = correct &amp;&amp; $(this).is(':checked');
             });
-
 
             completed++;
             if (correct)
@@ -442,7 +450,6 @@ label img {
             $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
             $('#' + current_question).show();
-
         });
     </script>
   </body>
