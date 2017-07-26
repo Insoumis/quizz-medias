@@ -171,8 +171,7 @@ label {
 }
 
 .infos {
-    width: 50%;
-    min-width: 400px;
+    width: 90%;
     margin: auto;
 }
 
