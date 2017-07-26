@@ -172,6 +172,7 @@ label {
 
 .infos {
     width: 90%;
+    max-width: 800px;
     margin: auto;
 }
 
