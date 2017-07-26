@@ -441,9 +441,18 @@ label img {
             displayAnswer(correct);
         }
 
+        function imageSelect()
+        {
+            $('label img').css('border-color', '#333');
+            $('label img').css('border-size', '1px');
+            $(this).next('label').find('img').css('border-color', 'red');
+            $(this).next('label').find('img').css('border-size', '3px');
+        }
+
         $( document ).ready(function() {
             
             $('.btn-answer').click(answerCurrentQuestion);
+            $('input[type=radio]').click(imageSelect);
             $('.btn-next').click(displayNextQuestion);
             current_section = $('#' + current_question).closest('section').attr('id');
             $('#' + current_question).closest('section').show();
