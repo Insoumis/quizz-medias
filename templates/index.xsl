@@ -49,7 +49,6 @@ body {
     color: #333;
     font-family: Roboto, sans-serif;
     font-size: 1.8em;
-    padding-top: 100px;
 }
 
 h1 {
@@ -206,7 +205,7 @@ label img {
 
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
