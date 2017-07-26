@@ -100,11 +100,11 @@ h1 {
 .question {
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,.12);
-    margin: 40px auto;
-    padding: 40px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-h2 {
+p.title {
     font-family: Montserrat, sans-serif;
     margin: 0 0 30px;
 }
@@ -120,6 +120,8 @@ form {margin: 0; margin-left: 40px;}
 label, input {
     display: inline-block;
     vertical-align: baseline;
+    padding: 0;
+    margin: 0;
 }
 
 label {
@@ -155,6 +157,7 @@ label {
 
 .infos {
     width: 50%;
+    min-width: 400px;
     margin: auto;
 }
 
@@ -176,8 +179,9 @@ label img {
 .question, .answer, .section, .incorrect, .correct, #score, #share { display: none; }
 
 #score {
+    width: 100%;
     padding-top: 50px;
-    width: 600px;
+    max-width: 600px;
     height: 300px;
     margin: auto;
 }
@@ -203,14 +207,12 @@ label img {
             </div>
          </div>
          <div id="sections">
-            <section class="section" id="d1e3">
-               <h1>Le choix de la rédaction</h1>
+            <section class="section" id="d1e3"><a name="d1e3"></a><h1>Le choix de la rédaction</h1>
                <p><em>Pour chacune des questions suivantes, trouvez le choix du journaliste</em></p>
                <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="8" style="width: 12.5%;"><span><strong>1 / 8</strong></span></div>
                </div>
-               <div class="question" id="d1e13" data-pos="1" data-count="8">
-                  <h2>« Éric Naulleau, à On n'est pas couché, à propos de Mélenchon : "Son modèle économique c'est ... »</h2>
+               <div class="question" id="d1e13" data-pos="1" data-count="8"><a name="d1e13"></a><p class="title">« Éric Naulleau, à On n'est pas couché, à propos de Mélenchon : "Son modèle économique c'est ... »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e13" id="d1e23"><label for="d1e23">L'URSS des années 50</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e13" id="d1e26"><label for="d1e26">Le Vénézuela de Chavez</label></div>
@@ -219,8 +221,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e13" id="d1e35"><label for="d1e35">L'écosocialisme</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e13"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -236,10 +237,9 @@ label img {
                         <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e40" data-pos="2" data-count="8">
-                  <h2>Alexandre Poplavsky dans l'Est Républicain le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à
+               <div class="question" id="d1e40" data-pos="2" data-count="8"><a name="d1e40"></a><p class="title">Alexandre Poplavsky dans l'Est Républicain le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à
                      chacune de ses sorties"
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e40" id="d1e47"><label for="d1e47">prépare soigneusement</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e40" id="d1e50"><label for="d1e50">profère religieusement</label></div>
@@ -247,8 +247,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e40" id="d1e56"><label for="d1e56">gerbe</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e40"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -273,10 +272,9 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e71" data-pos="3" data-count="8">
-                  <h2>Dans son article pour Europe 1 intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à Des Paroles et Des Actes",
+               <div class="question" id="d1e71" data-pos="3" data-count="8"><a name="d1e71"></a><p class="title">Dans son article pour Europe 1 intitulé "Ce qu'il fallait retenir du passage de Jean-Luc Mélenchon à Des Paroles et Des Actes",
                      quelle image le journaliste a-t-il voulu que le lecteur retienne ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e71" id="d1e84"><label for="d1e84"><img src="images/choix1.jpg" height="175"></label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e71" id="d1e87"><label for="d1e87"><img src="images/choix2.png" height="175"></label></div>
@@ -284,8 +282,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e71" id="d1e93"><label for="d1e93"><img src="images/choix4.png" height="175"></label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e71"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -308,10 +305,9 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e104" data-pos="4" data-count="8">
-                  <h2>Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon
+               <div class="question" id="d1e104" data-pos="4" data-count="8"><a name="d1e104"></a><p class="title">Pour illustrer des articles sur les débuts de Mélenchon à l'Assemblée Nationale, quelle image est la plus appropriée selon
                      Le Point, Europe 1, Libération ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e104" id="d1e120"><label for="d1e120"><img src="images/an1.jpg" height="175"></label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e104" id="d1e123"><label for="d1e123"><img src="images/an2.jpg" height="175"></label></div>
@@ -319,8 +315,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e104" id="d1e129"><label for="d1e129"><img src="images/an4.jpg" height="175"></label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e104"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -343,17 +338,15 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e140" data-pos="5" data-count="8">
-                  <h2>Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon Le Parisien, dans son article intitulé
+               <div class="question" id="d1e140" data-pos="5" data-count="8"><a name="d1e140"></a><p class="title">Quelle image du discours de Mélenchon à Marseille en 2012 fallait-il retenir, selon Le Parisien, dans son article intitulé
                      "Ce qu'il faut retenir du discours de Mélenchon à Marseille" ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e140" id="d1e150"><label for="d1e150"><img src="images/prado1.png" height="175"></label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e140" id="d1e153"><label for="d1e153"><img src="images/prado2.png" height="175"></label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e140"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -376,10 +369,9 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e165" data-pos="6" data-count="8">
-                  <h2>Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste,
+               <div class="question" id="d1e165" data-pos="6" data-count="8"><a name="d1e165"></a><p class="title">Pour les journalistes, Marine Le Pen (xénophobe, islamophobe, poujadiste) et Mélenchon (socialiste, humaniste, universaliste,
                      écologiste) sont :
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="checkbox" autocomplete="off" data-correct="1" name="d1e165" id="d1e172"><label for="d1e172">jumeaux</label></div>
                      <div><input type="checkbox" autocomplete="off" data-correct="1" name="d1e165" id="d1e175"><label for="d1e175">mariés</label></div>
@@ -390,8 +382,7 @@ label img {
                      <div><input type="checkbox" autocomplete="off" data-correct="1" name="d1e165" id="d1e191"><label for="d1e191">main dans la main</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e165"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -437,15 +428,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e237" data-pos="7" data-count="8">
-                  <h2>Pour Libération, critiquer les journalistes, est-ce acceptable ?</h2>
+               <div class="question" id="d1e237" data-pos="7" data-count="8"><a name="d1e237"></a><p class="title">Pour Libération, critiquer les journalistes, est-ce acceptable ?</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e237" id="d1e247"><label for="d1e247">Acceptable</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e237" id="d1e250"><label for="d1e250">Inacceptable</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e237"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -469,15 +458,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e262" data-pos="8" data-count="8">
-                  <h2>Pour Libération, assimiler Mélenchon à Hitler, Le Pen, Dieudonné, est-ce acceptable ?</h2>
+               <div class="question" id="d1e262" data-pos="8" data-count="8"><a name="d1e262"></a><p class="title">Pour Libération, assimiler Mélenchon à Hitler, Le Pen, Dieudonné, est-ce acceptable ?</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e262" id="d1e272"><label for="d1e272">Acceptable</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e262" id="d1e275"><label for="d1e275">Inacceptable</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e262"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -515,16 +502,14 @@ label img {
                   </div>
                </div>
             </section>
-            <section class="section" id="d1e331">
-               <h1>Le petit cercle des médias</h1>
+            <section class="section" id="d1e331"><a name="d1e331"></a><h1>Le petit cercle des médias</h1>
                <p><em>Quelques questions sur le monde homogène et fermé des journalistes</em></p>
                <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" style="width: 50%;"><span><strong>1 / 4</strong></span></div>
                </div>
-               <div class="question" id="d1e341" data-pos="1" data-count="4">
-                  <h2>Quelle rédaction a écrit dans son journal : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir
+               <div class="question" id="d1e341" data-pos="1" data-count="4"><a name="d1e341"></a><p class="title">Quelle rédaction a écrit dans son journal : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir
                      » et « [nous sommes] pour l’heure l’honneur de la profession. » ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e341" id="d1e348"><label for="d1e348">La rédaction de Fakir</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e341" id="d1e351"><label for="d1e351">La rédaction de Politis</label></div>
@@ -534,8 +519,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e341" id="d1e364"><label for="d1e364">La rédaction de Libération</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e341"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -551,10 +535,9 @@ label img {
                         <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e369" data-pos="2" data-count="4">
-                  <h2>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après
+               <div class="question" id="d1e369" data-pos="2" data-count="4"><a name="d1e369"></a><p class="title">Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après
                      avoir été censuré quatre fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e369" id="d1e376"><label for="d1e376">Toute la rédaction</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e369" id="d1e379"><label for="d1e379">Seulement deux</label></div>
@@ -562,8 +545,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e369" id="d1e385"><label for="d1e385">Zéro</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e369"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -585,18 +567,16 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e396" data-pos="3" data-count="4">
-                  <h2>Yann Barthès (Quotidien) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016
+               <div class="question" id="d1e396" data-pos="3" data-count="4"><a name="d1e396"></a><p class="title">Yann Barthès (Quotidien) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016
                      ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e396" id="d1e406"><label for="d1e406">environ 300 000 euros</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e396" id="d1e409"><label for="d1e409">environ 3 000 000 euros</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e396" id="d1e412"><label for="d1e412">environ 30 000 000 euros</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e396"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -619,18 +599,16 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e424" data-pos="4" data-count="4">
-                  <h2>À qui l'"impertinent" et "rebelle" Yann Barthès (qui ne "sert la soupe à personne") a-t-il demandé s'il aimait "se faire passer
+               <div class="question" id="d1e424" data-pos="4" data-count="4"><a name="d1e424"></a><p class="title">À qui l'"impertinent" et "rebelle" Yann Barthès (qui ne "sert la soupe à personne") a-t-il demandé s'il aimait "se faire passer
                      la bite au cirage" ? (Le Petit Journal, 28 mars 2012)
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e424" id="d1e434"><label for="d1e434">Au Président François Hollande</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e424" id="d1e437"><label for="d1e437">Au Président Emmanuel Macron</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e424" id="d1e440"><label for="d1e440">À l'ouvrier Philippe Poutou</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e424"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -647,22 +625,19 @@ label img {
                   </div>
                </div>
             </section>
-            <section class="section" id="d1e447">
-               <h1>Le Front National, un journaliste, ou les deux ?</h1>
+            <section class="section" id="d1e447"><a name="d1e447"></a><h1>Le Front National, un journaliste, ou les deux ?</h1>
                <p><em></em></p>
                <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 60%;"><span><strong>1 / 5</strong></span></div>
                </div>
-               <div class="question" id="d1e456" data-pos="1" data-count="5">
-                  <h2>Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconque se sent fragile ou menacé » ?</h2>
+               <div class="question" id="d1e456" data-pos="1" data-count="5"><a name="d1e456"></a><p class="title">Qui a dit : « Le Front National est devenu plus que tout autre le parti de quiconque se sent fragile ou menacé » ?</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e456" id="d1e463"><label for="d1e463">Un journaliste</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e456" id="d1e466"><label for="d1e466">Le Front National</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e456" id="d1e469"><label for="d1e469">Les deux</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e456"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -683,16 +658,14 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e482" data-pos="2" data-count="5">
-                  <h2>Qui a dit : « La rébellion ne se niche plus dans le vote rouge mais bleu marine » ?</h2>
+               <div class="question" id="d1e482" data-pos="2" data-count="5"><a name="d1e482"></a><p class="title">Qui a dit : « La rébellion ne se niche plus dans le vote rouge mais bleu marine » ?</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e482" id="d1e489"><label for="d1e489">Un journaliste</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e482" id="d1e492"><label for="d1e492">Le Front National</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e482" id="d1e495"><label for="d1e495">Les deux</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e482"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -713,16 +686,14 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e506" data-pos="3" data-count="5">
-                  <h2>Qui a employé l'expression « Français de fraîche date » ?</h2>
+               <div class="question" id="d1e506" data-pos="3" data-count="5"><a name="d1e506"></a><p class="title">Qui a employé l'expression « Français de fraîche date » ?</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e506" id="d1e513"><label for="d1e513">Un journaliste</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e506" id="d1e516"><label for="d1e516">Le Front National</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e506" id="d1e519"><label for="d1e519">Les deux</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e506"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -752,18 +723,16 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e539" data-pos="4" data-count="5">
-                  <h2>Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle
+               <div class="question" id="d1e539" data-pos="4" data-count="5"><a name="d1e539"></a><p class="title">Qui a dit à propos d'Angela Merkel : « [...] ses propos ont créé un appel d’air tel que, face à l’afflux de migrants, elle
                      a dû rétablir les frontières » ?
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e539" id="d1e546"><label for="d1e546">Un journaliste</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e539" id="d1e549"><label for="d1e549">Le Front National</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e539" id="d1e552"><label for="d1e552">Les deux</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e539"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -790,16 +759,14 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e570" data-pos="5" data-count="5">
-                  <h2>Qui a été condamné plusieurs fois pour provocation à la haine ?</h2>
+               <div class="question" id="d1e570" data-pos="5" data-count="5"><a name="d1e570"></a><p class="title">Qui a été condamné plusieurs fois pour provocation à la haine ?</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e570" id="d1e577"><label for="d1e577">Un journaliste</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e570" id="d1e580"><label for="d1e580">Le Front National</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e570" id="d1e583"><label for="d1e583">Les deux</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e570"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -837,22 +804,19 @@ label img {
                   </div>
                </div>
             </section>
-            <section class="section" id="d1e606">
-               <h1>Ont-ils vraiment osé ?</h1>
+            <section class="section" id="d1e606"><a name="d1e606"></a><h1>Ont-ils vraiment osé ?</h1>
                <p><em>Ils osent (presque) tout, c'est à ça qu'on les reconnaît. Pour chaque phrase, dites s'il s'agit d'un vrai titre ou d'un faux
                      titre de presse.</em></p>
                <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="9" style="width: 44.444444444444444444%;"><span><strong>1 / 9</strong></span></div>
                </div>
-               <div class="question" id="d1e616" data-pos="1" data-count="9">
-                  <h2>« Maximilien Ilitch Mélenchon »</h2>
+               <div class="question" id="d1e616" data-pos="1" data-count="9"><a name="d1e616"></a><p class="title">« Maximilien Ilitch Mélenchon »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e616" id="d1e623"><label for="d1e623">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e616" id="d1e626"><label for="d1e626">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e616"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -878,15 +842,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e638" data-pos="2" data-count="9">
-                  <h2>« Mélenchon : le délirant projet du Chavez Français »</h2>
+               <div class="question" id="d1e638" data-pos="2" data-count="9"><a name="d1e638"></a><p class="title">« Mélenchon : le délirant projet du Chavez Français »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e638" id="d1e645"><label for="d1e645">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e638" id="d1e648"><label for="d1e648">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e638"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -912,15 +874,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e663" data-pos="3" data-count="9">
-                  <h2>« Mélenchon, sans-culotte ou sans c... »</h2>
+               <div class="question" id="d1e663" data-pos="3" data-count="9"><a name="d1e663"></a><p class="title">« Mélenchon, sans-culotte ou sans c... »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e663" id="d1e670"><label for="d1e670">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e663" id="d1e673"><label for="d1e673">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e663"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -943,15 +903,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e685" data-pos="4" data-count="9">
-                  <h2>« Mélenchon, piège à c... »</h2>
+               <div class="question" id="d1e685" data-pos="4" data-count="9"><a name="d1e685"></a><p class="title">« Mélenchon, piège à c... »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e685" id="d1e692"><label for="d1e692">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e685" id="d1e695"><label for="d1e695">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e685"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -974,15 +932,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e707" data-pos="5" data-count="9">
-                  <h2>« Comment Emmanuel Macron est devenu "leader du monde libre" »</h2>
+               <div class="question" id="d1e707" data-pos="5" data-count="9"><a name="d1e707"></a><p class="title">« Comment Emmanuel Macron est devenu "leader du monde libre" »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e707" id="d1e714"><label for="d1e714">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e707" id="d1e717"><label for="d1e717">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e707"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1008,15 +964,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e733" data-pos="6" data-count="9">
-                  <h2>« Faites ce que vous voulez, mais votez Macron »</h2>
+               <div class="question" id="d1e733" data-pos="6" data-count="9"><a name="d1e733"></a><p class="title">« Faites ce que vous voulez, mais votez Macron »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e733" id="d1e740"><label for="d1e740">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e733" id="d1e743"><label for="d1e743">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e733"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1039,15 +993,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e755" data-pos="7" data-count="9">
-                  <h2>« Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux »</h2>
+               <div class="question" id="d1e755" data-pos="7" data-count="9"><a name="d1e755"></a><p class="title">« Mélenchon, Ruffin et les Sans-cravates: une menace à prendre au sérieux »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e755" id="d1e762"><label for="d1e762">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e755" id="d1e765"><label for="d1e765">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e755"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1073,15 +1025,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e782" data-pos="8" data-count="9">
-                  <h2>« Mélenchon vous "manipule" »</h2>
+               <div class="question" id="d1e782" data-pos="8" data-count="9"><a name="d1e782"></a><p class="title">« Mélenchon vous "manipule" »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e782" id="d1e789"><label for="d1e789">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e782" id="d1e792"><label for="d1e792">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e782"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1106,15 +1056,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e808" data-pos="9" data-count="9">
-                  <h2>« Mélenchon convoqué par la justice dans l'affaire des Panama Papers »</h2>
+               <div class="question" id="d1e808" data-pos="9" data-count="9"><a name="d1e808"></a><p class="title">« Mélenchon convoqué par la justice dans l'affaire des Panama Papers »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e808" id="d1e815"><label for="d1e815">Vrai titre</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e808" id="d1e818"><label for="d1e818">Faux titre</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e808"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1142,14 +1090,12 @@ label img {
                   </div>
                </div>
             </section>
-            <section class="section" id="d1e832">
-               <h1>Qui a dit...</h1>
+            <section class="section" id="d1e832"><a name="d1e832"></a><h1>Qui a dit...</h1>
                <p><em>Pour chacune des phrases suivantes, devinez qui l'a prononcée ou écrite !</em></p>
                <div class="progress sub-progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 100%;"><span><strong>1 / 5</strong></span></div>
                </div>
-               <div class="question" id="d1e842" data-pos="1" data-count="5">
-                  <h2>« Mélenchon, le rouge qui clashe »</h2>
+               <div class="question" id="d1e842" data-pos="1" data-count="5"><a name="d1e842"></a><p class="title">« Mélenchon, le rouge qui clashe »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e842" id="d1e849"><label for="d1e849">Le Figaro</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e842" id="d1e852"><label for="d1e852">Minute</label></div>
@@ -1157,8 +1103,7 @@ label img {
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e842" id="d1e858"><label for="d1e858">Valeurs Actuelles</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e842"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1181,15 +1126,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e870" data-pos="2" data-count="5">
-                  <h2>« Jean-Luc Mélenchon joue à saute-cadavre »</h2>
+               <div class="question" id="d1e870" data-pos="2" data-count="5"><a name="d1e870"></a><p class="title">« Jean-Luc Mélenchon joue à saute-cadavre »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e870" id="d1e877"><label for="d1e877">Le Monde</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e870" id="d1e880"><label for="d1e880">Mediapart</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e870"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1210,15 +1153,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e890" data-pos="3" data-count="5">
-                  <h2>« Je vais vous traquer jusqu'au fond des chiottes, crétine »</h2>
+               <div class="question" id="d1e890" data-pos="3" data-count="5"><a name="d1e890"></a><p class="title">« Je vais vous traquer jusqu'au fond des chiottes, crétine »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e890" id="d1e897"><label for="d1e897">Jean Quatremer (journaliste à Libération) à une sympathisante du Parti de Gauche</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e890" id="d1e902"><label for="d1e902">Jean-Luc Mélenchon à une journaliste</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e890"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1241,15 +1182,13 @@ label img {
                         </div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e913" data-pos="4" data-count="5">
-                  <h2>« […] le Conseil des ministres et la Commission sont noyautés par des haut-fonctionnaires allemands […] »</h2>
+               <div class="question" id="d1e913" data-pos="4" data-count="5"><a name="d1e913"></a><p class="title">« […] le Conseil des ministres et la Commission sont noyautés par des haut-fonctionnaires allemands […] »</p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e913" id="d1e920"><label for="d1e920">Jean Quatremer dans <em>Libération</em></label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e913" id="d1e925"><label for="d1e925">Jean-Luc Mélenchon dans <em>Le Hareng de Bismarck</em></label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e913"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1265,18 +1204,16 @@ label img {
                         <div class="infos"></div><button type="button" class="btn btn-primary btn-next">Question suivante</button></div>
                   </div>
                </div>
-               <div class="question" id="d1e932" data-pos="5" data-count="5">
-                  <h2>« Vous pouvez bouffer votre feuille [charte éthique d'un syndicat de journalistes] » « Et vous pouvez aussi vous étouffer
+               <div class="question" id="d1e932" data-pos="5" data-count="5"><a name="d1e932"></a><p class="title">« Vous pouvez bouffer votre feuille [charte éthique d'un syndicat de journalistes] » « Et vous pouvez aussi vous étouffer
                      après avec le code du travail [...] Ça me fera des vacances.» « Je préférerai (sic) que vous le mangiez avant [...] Histoire
                      de maximiser les chances d'estouffade »
-                  </h2>
+                  </p>
                   <form>
                      <div><input type="radio" autocomplete="off" data-correct="1" name="d1e932" id="d1e939"><label for="d1e939">Cédric Mathiot (journaliste à Libération)</label></div>
                      <div><input type="radio" autocomplete="off" data-correct="" name="d1e932" id="d1e942"><label for="d1e942">Murielle Pénicaud (Ministre du travail)</label></div>
                      <div><button type="button" class="btn btn-primary btn-answer">Valider</button></div>
                   </form>
-                  <div class="answer">
-                     <div class="row">
+                  <div class="answer"><a name="answer-d1e932"></a><div class="row">
                         <div class="correct"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Bonne réponse :)
                            
                         </div>
@@ -1311,7 +1248,7 @@ label img {
             Score à partager (clic-droit, enregistrer l'image) :
             
          </div>
-      </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script><script type="text/javascript" src="html2canvas.js"></script><script type="text/javascript">
+      </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script><script type="text/javascript">
         current_question = 'd1e13';
         current_section = '';
 
@@ -1359,6 +1296,7 @@ label img {
             $('#' + current_question + ' form').hide();
             $('#' + current_question + ' .answer').show();
             $('#' + current_question + ' .answer .' + (correct ? 'correct' : 'incorrect')).show();
+            location.href = "#answer-"+current_question;
         }
 
         function displayNextSection()
@@ -1369,6 +1307,7 @@ label img {
             {
                 $('#' + prev_section).hide();
                 $('#' + current_section).show();
+                location.href = "#"+current_section;
             }
         }
 
@@ -1398,6 +1337,7 @@ label img {
             {
                 current_question = next_question;
                 $('#' + current_question).show();
+                location.href = "#"+current_question;
             }
 
             var cq = $('#' + current_question);
@@ -1412,7 +1352,6 @@ label img {
             $('#' + current_question + ' input[data-correct=1]').each(function(i) {
                 correct = correct && $(this).is(':checked');
             });
-
 
             completed++;
             if (correct)
@@ -1432,7 +1371,6 @@ label img {
             $('#' + current_question).closest('section').show();
             /* $('.question').hide(); */
             $('#' + current_question).show();
-
         });
     </script></body>
 </html>
