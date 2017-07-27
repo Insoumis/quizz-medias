@@ -260,7 +260,7 @@ label img {
 
                     <div class="question" id="{generate-id(.)}" data-pos="{position()}" data-count="{$nombre_questions}" >
                         <a name="{generate-id(.)}"></a>
-                        <p class="title"><xsl:value-of select="./titre" /></p>
+                        <p class="title"><xsl:copy-of select="./titre/node()" /></p>
 
                         <form>
                             <xsl:for-each select="./reponses/reponse">
