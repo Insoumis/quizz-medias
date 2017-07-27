@@ -16,7 +16,7 @@
             </reponses>
         </question>
         <question>
-            <titre>Alexandre Poplavsky dans l'Est Républicain le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à chacune de ses sorties"</titre>
+            <titre>Alexandre Poplavsky dans l'<em>Est Républicain</em> le 25 janvier 2012 à propos de Jean-Luc Mélenchon : "Il ... ces déclarations à chacune de ses sorties"</titre>
             <reponses>
                 <reponse>prépare soigneusement</reponse>
                 <reponse>profère religieusement</reponse>
@@ -133,16 +133,16 @@
         <question>
             <titre>Quelle rédaction a écrit dans son journal : « Nous sommes de gauche, nous luttons contre les injustices, les abus de pouvoir » et « [nous sommes] pour l’heure l’honneur de la profession. » ?</titre>
             <reponses>
-                <reponse>La rédaction de Fakir</reponse>
-                <reponse>La rédaction de Politis</reponse>
-                <reponse>La rédaction de Bastamag</reponse>
-                <reponse>La rédaction de Télérama</reponse>
-                <reponse>La rédaction du Monde Diplomatique</reponse>
-                <reponse correct="1">La rédaction de Libération</reponse>
+                <reponse>La rédaction de <em>Fakir</em></reponse>
+                <reponse>La rédaction de <em>Politis</em></reponse>
+                <reponse>La rédaction de <em>Bastamag</em></reponse>
+                <reponse>La rédaction de <em>Télérama</em></reponse>
+                <reponse>La rédaction du <em>Monde Diplomatique</em></reponse>
+                <reponse correct="1">La rédaction de <em>Libération</em></reponse>
             </reponses>
         </question>
         <question>
-            <titre>Combien de journalistes de Libération ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré quatre fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
+            <titre>Combien de journalistes de <em>Libération</em> ont pris la défense de leur collègue Pierre Marcelle quand celui-ci a  démissionné après avoir été censuré quatre fois dans ce journal, dont une fois pour avoir pris la défense de Mélenchon ?</titre>
             <reponses>
                 <reponse>Toute la rédaction</reponse>
                 <reponse>Seulement deux</reponse>
@@ -154,7 +154,7 @@
             </infos>
         </question>
         <question>
-            <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur TMC. Combien a-t-il gagné en 2016 ?</titre>
+            <titre>Yann Barthès (<em>Quotidien</em>) s'est vanté de ne pas avoir été augmenté lors de son arrivée sur <em>TMC</em>. Combien a-t-il gagné en 2016 ?</titre>
             <reponses>
                 <reponse>environ 300 000 euros</reponse>
                 <reponse>environ 3 000 000 euros</reponse>
@@ -266,7 +266,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos><div>
-                Il s'agit d'un éditorial à la une du Figaro (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine.
+                Il s'agit d'un éditorial à la une du <em>Figaro</em> (ce tract du délinquant vendeur d'armes Serge Dassault) le 12 avril 2017 (donc à 11 jours du premier tour de la Présidentielle). "Maximilien" fait référence à Robespierre, "Ilitch" à Lénine.
 
                 <a target="_blank" href="http://www.lefigaro.fr/vox/politique/2017/04/11/31001-20170411ARTFIG00304-editorial-maximilien-ilitch-melenchon.php"><img src="images/mim.jpg" /></a>
             </div></infos>
@@ -279,7 +279,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos><div>
-                <p>Il s'agit de la une du Figaro, toujours dans l'édition du 12 avril 2017 !</p>
+                <p>Il s'agit de la une du <em>Figaro</em>, toujours dans l'édition du 12 avril 2017 !</p>
 
                 <a target="_blank" href="https://www.pressreader.com/france/le-figaro/20170412/281492161179749"><img src="images/dp.jpg" /></a>
             </div></infos>
@@ -292,7 +292,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos><div>
-                Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a target="_blank" href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html">L'Obs</a>.
+                Il s'agit d'un authentique titre d'un éditorial de Sylvain "Courage" pour <a target="_blank" href="http://tempsreel.nouvelobs.com/presidentielle-2017/20170426.OBS8589/melenchon-sans-culotte-ou-sans-c.html"><em>L'Obs</em></a>.
             </div></infos>
         </question>
 
@@ -314,7 +314,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos><div>
-                <p>Il s'agit du titre d'un article du Point</p>
+                <p>Il s'agit du titre d'un article du <em>Point</em></p>
 
                 <a target="_blank" href="http://www.arretsurimages.net/articles/2017-06-02/Apres-son-appel-aux-Americains-BFMTV-celebre-le-leadership-de-Macron-id9922"><img src="images/lml.png" /></a>
             </div></infos>
@@ -362,7 +362,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos><div>
-                <p>C'est le titre d'un <a target="_blank" href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'Europe 1</a></p>
+                <p>C'est le titre d'un <a target="_blank" href="http://www.europe1.fr/politique/melenchon-vous-manipule-945013">article d'<em>Europe 1</em></a></p>
                 <img src="images/manipule.jpg" />
             </div></infos>
         </question>
@@ -374,7 +374,7 @@
                 <reponse>Faux titre</reponse>
             </reponses>
             <infos><div>
-                C'était le titre d'un article de BFM TV. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
+                C'était le titre d'un article de <em>BFM TV</em>. En effet, Mélenchon a été convoqué par la justice, après que la Société Générale a porté plainte contre lui pour diffamation parce qu'il a accusé le PDG de la banque, Frédéric Oudéa, d'avoir menti devant une commission parlementaire. Celui-ci avait alors affirmé que la Sogé ne possédait plus de sociétés offshores dans les paradis fiscaux. Or, les Panama Papers ont prouvé le contraire. C'est ainsi que la chaine du milliardaire Patrick Drahi en est arrivé à ce titre édifiant. Sous la pression, le titre a fini par être changé. Mais trop tard et sans <em>mea culpa</em> !
             </div></infos>
         </question>
     </questions>
@@ -408,7 +408,7 @@
         <question>
             <titre>« Je vais vous traquer jusqu'au fond des chiottes, crétine »</titre>
             <reponses>
-                <reponse correct="1">Jean Quatremer (journaliste à Libération) à une sympathisante du Parti de Gauche</reponse>
+                <reponse correct="1">Jean Quatremer (journaliste à <em>Libération</em>) à une sympathisante du Parti de Gauche</reponse>
 <!--                <reponse>Jean-Marie Le Pen à une Femen</reponse>-->
                 <reponse>Jean-Luc Mélenchon à une journaliste</reponse>
             </reponses>
@@ -422,12 +422,15 @@
                 <reponse correct="1">Jean Quatremer dans <em>Libération</em></reponse>
                 <reponse>Jean-Luc Mélenchon dans <em>Le Hareng de Bismarck</em></reponse>
             </reponses>
+            <infos>
+                Mélenchon est régulièrement accusé de germanophobie lorsqu'il dénonce le pouvoir et l'influence exagérés de l'Allemagne sur le reste de l'Union Européenne, y compris dans <em>Libération</em> : <br /> Mélenchon « [joue] avec la flamme du nationalisme et les mauvais instincts anti-germains » (9 mai 2015, <em>Libération</em>). Mais quand c'est Jean Quatremer qui le dit dans le même journal, aucun problème, ce n'est plus germanophobe.
+            </infos>
         </question>
         <question>
             <titre>« Vous pouvez bouffer votre feuille [charte éthique d'un syndicat de journalistes] » « Et vous pouvez aussi vous étouffer après avec le code du travail [...] Ça me fera des vacances.» « Je préférerai (sic) que vous le mangiez avant [...] Histoire de maximiser les chances d'estouffade »</titre>
             <reponses>
                 <reponse correct="1">Cédric Mathiot (journaliste à Libération)</reponse>
-                <reponse>Murielle Pénicaud (Ministre du travail)</reponse>
+                <reponse>Muriel Pénicaud (Ministre du travail)</reponse>
             </reponses>
             <infos><div>
                 <img src="images/mathiot.png" />
